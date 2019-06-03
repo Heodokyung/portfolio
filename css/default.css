@@ -1,0 +1,73 @@
+/************************************************
+	Decrition : 허도경 HEO.D.K
+	Version : 1.0
+
+	--- CSS LIST ---
+	01. Page Reset CSS
+	02. Page Common CSS
+	03. Page Top Button
+************************************************/
+
+@charset "utf-8";
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);*/
+
+/**************************
+	01. Page Reset CSS
+***************************/
+html,body {background:#fff;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, thead, tbody, tr, th, td, form, fieldset, legend, input, textarea, button {margin:0; padding:0; font-family:'NotoSansR', sans-serif;; font-weight:normal;}
+body {-webkit-text-size-adjust:none}
+table {width:100%; border:0; border-spacing:0; border-collapse:collapse;}
+option {vertical-align:middle; padding:3px 0;}
+img, fieldset, button, frame {vertical-align:middle; border:0;}
+ul, ol {list-style:none;}
+em, address {font-style:normal;}
+hr {visibility:hidden;}
+caption {visibility:hidden; overflow:hidden; top:0; left:0; width:0; height:0; font-size:0; line-height:0;}
+input, textarea, button {line-height: 1.2; vertical-align: middle;}
+
+a {text-decoration:none; color:#0f00ef; cursor:pointer;}
+a:hover, a:active, a:focus{text-decoration:none;}
+input[type="checkbox"],input[type="radio"] {margin:0; padding:0; vertical-align:middle; width:13px; height:13px; line-height:13px;}
+input[type=submit] {margin:0; padding:0; border:0; cursor:pointer;}
+label {cursor:pointer;}
+button {border:0; vertical-align:middle; cursor:pointer; overflow:visible; background:transparent;}
+button::-moz-focus-inner {border:0; padding:0;}
+select {border:1px solid #e0e0e0; height:24px; padding:3px 3px 3px 4px; vertical-align:middle; line-height:24px; background:#fff;}
+input[type="file"] {vertical-align:middle; height:22px; width:80%; margin-right:6px;}
+
+/*************************
+	02. Page Common CSS
+**************************/
+/* skip to content */
+#skip_menu {position:absolute; width:100%; height:0; z-index:10000;}
+#skip_menu a {display:block; width:1px; height:1px; margin-bottom:-1px; overflow:hidden; text-align:center; white-space:nowrap; background:#1c1c1c; color:#fff; font-weight:bold; font-size:14px;}
+#skip_menu a:focus,
+#skip_menu a:active {width:100%; height:auto; padding:15px; font-size:16px;}
+
+#wrap {position:relative; margin:0 auto; overflow:hidden;}
+.width_fix {position:relative; width:1170px; margin:0 auto;}
+.hidden, legend {position:absolute; top:0; left:0; width:1px; height:1px; font-size:0; line-height:0; overflow:hidden;}
+.btn {display:inline-block; text-indent:100%; white-space:nowrap; overflow:hidden;}
+.blind {text-indent:100%; text-indent:100%; white-space:nowrap; overflow:hidden;}
+
+.c {text-align:center !important;}
+.l {text-align:left !important;}
+.r {text-align:right !important;}
+
+/*************************
+	03. Page Top Button
+**************************/
+.scrollup {display:none; position:fixed; bottom:30px; right:15px; width:76px; height:86px; z-index:1000; background:url(../img/btn_scrollpng.png) no-repeat;}
+.scrollup span {display:inline-block; position:absolute; top:-23px; left:0; height:20px; font-size: 12px; border-radius:3px; line-height:19px; color:#fff; background: rgba(0,0,0,0.7); width:0; overflow:hidden;}
+.scrollup:hover span,
+.scrollup:focus span {width:72px; transition: width 0.6 ease-in-out; -webkit-transition: width 0.6s ease-in-out; transform-origin: center;}
+
+
+
+
+
+
+
+

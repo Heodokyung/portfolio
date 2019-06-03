@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/cm.style.css?date190603_1010" />
+<link rel="stylesheet" type="text/css" href="css/main.css?date190603_1010" />
+<title>Lime Whale | Portfolio</title>
+</head>
+<body>
+<div id="wrap" class="main">
+	<div id="skip_menu">
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#content">본문 바로가기</a>
+	</div>
+
+	<section id="header_area" class="wide">
+		<header>
+			<h1 id="logo" class="main txt"><a href="index.html">HEO.D.K</a></h1>
+			<nav id="web">
+
+				<ul id="gnb">
+					<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md">Makeup<br>Guide</a></li>
+				</ul>
+			</nav>
+			<nav id="mobile">
+				<a href="#" class="btn_menu"><span></span></a>
+			</nav>
+			<ul class="m_menu">
+				<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md">MarkUpGuide</a></li>
+			</ul>
+		</header>
+		<span class="progressbar" id="scrollBar"></span>
+	</section>
+
+
+	<section class="container">
+		<article class="main_visual">
+			<div class="title_wrap">
+				<p class="tit">
+					UI & UX<br>
+					<span>Front End</span> Developer
+				</p>
+				<p class="sub_tit">웹표준 및 웹 접근성 지식으로 사용자에게 보다 좋은 UI를 제공하려고 노력합니다.<br> 또한 개발자 직무 경험을 바탕으로 개발팀과 원활한 커뮤니케이션을 진행하고 디자인팀과 보다 좋은 GUI를 구현하기 위해 소통합니다.</p>
+			</div>
+			<img src="img/main/bg_main_visual.jpg" alt="">
+
+			<div class="movement_wrap">
+				<div>
+					<em>scroll</em>
+				</div>
+			</div>
+		</article>
+
+
+		<article id="wrapper">
+			<article>
+				<span class="guide"></span>
+				<div id="scroller">
+					<section class="sort_wrap">
+						<label for="sort">SORT :</label>
+						<select id="sort" title="Sort 기능" v-model="sort" @change="sortChange">
+							<option value="all">ALL</option>
+							<option value="y2018">2018</option>
+							<option value="y2017">2017</option>
+							<option value="y2016">2016</option>
+							<option value="y2015">2015</option>
+							<option value="y2014">2014</option>
+							<option value="y2013">2013</option>
+							<option value="y2012">2010 ~ 2012</option>
+							<option value="w">Web</option>
+							<option value="m">Mobile</option>
+							<option value="r">Responsive</option>
+							<option value="ui">Front-End [UI]</option>
+							<option value="dev">Back-End</option>
+						</select>
+						<!--
+						<span class="sch_wrap">
+							<input name="" v-model.trim="query" class="sch_txt" placeholder="SEARCH" />
+						</span>
+						-->
+					</section>
+				</div>
+			</article>
+
+			<article class="port_list_wrap">
+				<h2 class="title">Works</h2>
+				<div class="port_list">
+					<ul v-if="!query">
+						<portfolio-items v-for="(items, index) in portfolio" :key="index" :items="items" :class="items.gubun"></portfolio-items>
+					</ul>
+					<!-- <div class="search_result" v-if="query">
+						<ul>
+							<portfolio-items v-for="(items, index) in searching" :key="index" :items="items" v-model="total"></portfolio-items>
+						</ul>
+					</div> -->
+				</div>
+			</article>
+			<!-- //port_list_wrap -->
+
+		</article>
+		<!-- // wapper -->
+
+		<article class="work_skill">
+			<h2 class="title">skill</h2>
+			<ul class="skill_list">
+				<li>
+					<div class="front">
+						<p>HTML5/CSS3</p>
+						<div class="over">
+							<span class="tit">CLICK</span>
+						</div>
+						<!-- https://www.w3schools.com/ -->
+					</div>
+					<div class="back">
+						<p>웹표준, 웹 접근성을 준수하고 웹, 모바일 웹, 하이브리드 웹 화면에 최적화 된 화면을 구현하며 HTML5, CSS3를 활용하여 보다 간결하고 시멘틱한 마크업을 사용합니다.</p>
+					</div>
+				</li>
+				<li>
+					<div class="front">
+						<p>JavaScript</p>
+						<div class="over">
+							<span class="tit">CLICK</span>
+						</div>
+						<!-- https://www.w3schools.com/js/ -->
+					</div>
+					<div class="back">
+						JavaScript를 사용하여 스크립트를 구현합니다.
+						ES5, ES6 문법을 활용하여 웹/앱 환경에 최적화 된 모션과 기능을 구현하도록 노력합니다.
+					</div>
+				</li>
+				<li>
+					<div class="front">
+						<p>jQuery</p>
+						<div class="over">
+							<span class="tit">CLICK</span>
+						</div>
+						<!-- https://jquery.com/ -->
+					</div>
+					<div class="back">
+						jQuery를 활용하여 Json을 활용한 Ajax 데이터 핸들링 및 UI모션 기능을 구현합니다.
+					</div>
+				</li>
+				<li>
+					<div class="front">
+						<p>Vue</p>
+						<div class="over">
+							<span class="tit">CLICK</span>
+						</div>
+						<!-- https://kr.vuejs.org/v2/guide/index.html -->
+					</div>
+					<div class="back">Vue는 사용자 인터페이스를 만들기 위한 프레임워크 입니다. 현재 저의 포트폴리오 사이트도 Vue를 사용하여 구현하였습니다.</div>
+				</li>
+
+				<li>
+					<div class="front">
+						<p>Sass</p>
+						<div class="over">
+							<span class="tit">CLICK</span>
+						</div>
+						<!-- https://sass-lang.com/ -->
+					</div>
+					<div class="back">
+						Sass를 활용하여 CSS를 컴파일 합니다. 보다 간결하고 재사용, 확장성이 가능한 CSS 코드를 사용하여 신규 코드의 사용 및 유지보수에 용이하도록 작업합니다.
+					</div>
+				</li>
+				<li>
+					<div class="front">
+						<p>Zeplin</p>
+						<div class="over">
+							<span class="tit">CLICK</span>
+						</div>
+						<!--  -->
+					</div>
+					<div class="back">
+						디자이너와 업무의 효율적인 협업을 위해 제플린을 통해 디자인을 전달받고 작업하였습니다. 코멘트를 활용하여 수정사항을 전달하고 피드백을 전달하였습니다.
+					</div>
+				</li>
+				<li>
+					<div class="front">
+						<p>Jira</p>
+						<div class="over">
+							<span class="tit">CLICK</span>
+						</div>
+						<!-- https://ko.atlassian.com/software/jira -->
+					</div>
+					<div class="back">
+						Jira를 활용하여 타팀의 신규서비스 및 수정사항을 등록하고 히스토리를 관리하며 Jira와 ChangeFlow를 통해 QA에게 업무를 전달하여 소스코드를 배포 및 수정을 진행합니다.
+					</div>
+				</li>
+				<li>
+					<div class="front">
+						<p>Wiki<br>Confluence</p>
+						<div class="over">
+							<span class="tit">CLICK</span>
+						</div>
+						<!-- https://ko.atlassian.com/software/confluence -->
+					</div>
+					<div class="back">
+						Wiki Confluence를 통하여 웹/앱 작업에 대한 이슈사항을 히스토리를 남겨서 모두가 확인하고 반복된 실수를 하지 않도록 공유하고 개발자들과 Wiki Confluence를 통해 협업을 진행하였습니다.
+					</div>
+				</li>
+
+				<li>
+					<div class="front">
+						<p>RedMine</p>
+						<div class="over">
+							<span class="tit">CLICK</span>
+						</div>
+						<!-- https://www.redmine.org/ -->
+					</div>
+					<div class="back">
+						RedMine을 통하여 프로젝트의 전체 IA를 확인하고 업무 일정 및 업무량을 배정받아 일정에 맞게 작업을 진행하였습니다.
+					</div>
+				</li>
+				<li>
+					<div class="front">
+						<p>Git/SVN</p>
+						<div class="over">
+							<span class="tit">CLICK</span>
+						</div>
+						<!-- https://github.com/ -->
+					</div>
+					<div class="back">
+						Git/SVN을 통하여 파일 버전관리를 하였습니다. 여러명의 작업자들이 함께 작업을 진행해야 하기 때문에 히스토리 관리 및 버전관리를 통해 작업을 효율적으로 진행하였습니다.
+					</div>
+				</li>
+				<li>
+					<div class="front">
+						<p>Sublime<br>Text</p>
+						<div class="over">
+							<span class="tit">CLICK</span>
+						</div>
+						<!-- https://www.sublimetext.com/ -->
+					</div>
+					<div class="back">
+						Sublime Text를 활용하여 마크업 및 JavaScript를 구현합니다. Sublime Text의 기능을 활용하여 보다 정확한 코드를 작성하고 업무의 효율을 증진시킵니다.
+					</div>
+				</li>
+				<li>
+					<div class="front">
+						<p>Slack</p>
+						<div class="over">
+							<span class="tit">CLICK</span>
+						</div>
+						<!-- https://slack.com/ -->
+					</div>
+					<div class="back">
+						Slack을 활용하여 기획, 디자인, 개발팀과의 업무를 전달하고 이슈사항을 공유합니다. 타 팀과 프로젝트별로 채널을 만들어 프로젝트별로 업무의 상황을 서로 공유하여 업무의 효율을 높입니다.
+					</div>
+				</li>
+			</ul>
+		</article>
+
+		<article class="work_experience">
+			<h2 class="title">Works experience</h2>
+			<div class="info_wrap">
+				<dl>
+					<dt>(주)핀크(Finnq)</dt>
+					<dd>
+						<ul>
+							<li>기간 : 2018.08. ~ 재직중</li>
+							<li>소속 / 직급 : Platform개발 2팀 / 매니저</li>
+							<li>담당업무 : Finnq App/Web에서 제공하는 다양한 서비스 운영 및 신규 서비스 개발, 배포를 담당하고 있습니다.<br /> Sketch와 Zepline을 통해 기획자 및 디자이너와 협업을 진행하고 있으며 Jira, Wiki Confluence, Slack을 사용하여 이슈처리 대응 및 히스토리 관리를 합니다.</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>넷트루컨설팅그룹</dt>
+					<dd>
+						<ul>
+							<li>기간 : 2016.01. ~ 2018.07.</li>
+							<li>소속 / 직급 : 채널사업부 / 책임</li>
+							<li>담당업무 : 웹 퍼블리싱 PL, 웹 접근성 검수, 웹 표준, 웹/모바일 퍼블리싱, UI 개발</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>애드캡슐소프트</dt>
+					<dd>
+						<ul>
+							<li>기간 : 2014.02. - 2015.12.</li>
+							<li>소속 / 직급 : 퍼블리싱 그룹 / 주임</li>
+							<li>담당업무 : 웹 접근성 검수, 웹 표준, 웹/모바일 퍼블리싱, UI 개발</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>토피아정보기술</dt>
+					<dd>
+						<ul>
+							<li>기간 : 2012.08. - 2013.09.</li>
+							<li>소속 / 직급 : 웹 개발팀 / 대리</li>
+							<li>담당업무 : Java, Jsp, Oracel, SQL, iBatis등</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>주식회사에이스통상</dt>
+					<dd>
+						<ul>
+							<li>기간 : 2010.04. - 2012.02.</li>
+							<li>소속 / 직급 : 전산부 / 사원</li>
+							<li>담당업무 : Asp, Ramada 웹 사이트 운영</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</article>
+
+		<article class="info_about">
+			<h2 class="title">about</h2>
+			<div class="info_wrap">
+				<div>
+					<h3 class="sub_title">license</h3>
+					<dl>
+						<dt>정보처리기사</dt>
+						<dd>
+							<ul>
+								<li>취득일 : 2015.05.08.</li>
+								<li>발행처 : 한국산업인력공단</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+
+				<div>
+					<h3 class="sub_title">TRAINING &amp; ETC</h3>
+					<dl>
+						<dt>정보접근성 지킴이 활동</dt>
+						<dd>
+							<ul>
+								<li>기관 : 미래창조과학부</li>
+								<li>기간 : 2016.04.04. - 2016.12.31.</li>
+								<li>활동내용 : 웹 접근성 준수를 위하여 미래창조과학부에서 주관하는 웹 정보접근성지킴이 활동으로<br> 표본사이트 1000~2000의 사이트를 선별하여 웹 접근성 준수여부를 준수하였는지 확인 후<br> 보고서 작성 및 웹 접근성을 준수하도록 권고하는 활동을 하였습니다.</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>하이브리드 인터페이스 기술구현 고도화</dt>
+						<dd>
+							<ul>
+								<li>기관 : 대한상공회의소</li>
+								<li>기간 : 2015.10.17. - 2015.11.01.</li>
+								<li>교육내용 : AngularJS를 활용하여 폰 앱 구현</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>웹표준 전문가 양성과정</dt>
+						<dd>
+							<ul>
+								<li>기관 : 한국직업전문학교</li>
+								<li>기간 : 2013.10.16. - 2013.12.10.</li>
+								<li>교육내용 : HTML,CSS,jQuery,Javascript,웹접근성,크로스 브라우징에 대한 개념교육</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>멀티플렛폼 스마트 웹 & 앱 개발자 과정</dt>
+						<dd>
+							<ul>
+								<li>기관 : 중앙정보처리학원</li>
+								<li>기간 : 2012.03.15. - 2012.08.06.</li>
+								<li>교육내용 : Java,Servlet,JSP,Oracel,SQL,Struts,Spring등을 기반으로 웹 	사이트의 전반적인 구조및 데이터베이스 기능 구현</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</article>
+
+	</section>
+
+	<footer>
+		<div class="footer_area">
+			<p class="footer_logo"><img src="img/footer_whale.png" alt="whale tail" /></p>
+			<div class="copyright1">
+				<p>Copyright © limewhale.com All rights reserved.</p>
+				<address><a href="mailto:limewhale@daum.net">limewhale@daum.net</a></address>
+			</div>
+		</div>
+		<button type="button" class="scrollup"><span>Scroll Top</span></button>
+	</footer>
+
+</div><!-- //wrap -->
+
+</body>
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/vue-2.5.17.min.js"></script>
+<script type="text/javascript" src="js/ui.js?date190522_1113"></script>
+<script type="text/javascript" src="js/mainVue.js?date190522_1113"></script>
+<script type="text/javascript">
+$(function(){
+
+	// Common UI
+	var windowH 	= $(window).height(),
+		documentH 	= $(document).height(),
+		easing	 	= 'swing';
+
+	// 스크롤 시 메뉴 페이드
+	$(window).scroll(function(event){
+		menuScrollEvt();
+	});
+
+	$(window).resize(function() {
+		footerResize();
+	});
+
+
+
+	// 포트폴이오 메뉴 리스트 자세히보기 EVENT
+	function portMenuListEvt(){
+		$(document).on('mouseenter focusin', '.port_list li', function() {
+			$(this).find('.over').css({ opacity : .8 }).stop().fadeIn(250);
+			$(this).find('.more').stop().animate({ bottom : '50px'}, 350, easing, function() {});
+		});
+
+		$(document).on('mouseleave focusout', '.port_list li', function() {
+			$('.port_list li .over').fadeOut(250);
+			$(this).find('.more').stop().animate({ bottom : '-300%'}, 350, easing, function() {});
+		});
+	}
+
+    // layer Close
+	$(document).on('click', '.layer_pop .btn_close, .layer_pop .btn_cancel', function () {
+		$('#wrap').css({height : documentH}).removeClass('on');
+			$('.layer_pop').remove();
+			$('.mask').remove();
+	});
+
+
+
+	// 화면 스크롤 시 페이지 목록 호출 이벤트
+	function menuScrollEvt(){
+		var _num = 600;
+		var _menu1 = $('.port_list_wrap').offset().top - 500,
+			_menu2 = $('.skill_list').offset().top - 500,
+			_menu3 = $('.work_experience .info_wrap').offset().top - _num,
+			_menu4 = $('.info_about .info_wrap').offset().top - _num,
+			_scrollTop = $(this).scrollTop();
+
+		if (_scrollTop >= _menu1) {$('.port_list').addClass('on');}
+		if (_scrollTop >= _menu2) {$('.skill_list').addClass('on');}
+		if (_scrollTop >= _menu3) {$('.work_experience .info_wrap').addClass('on');}
+		if (_scrollTop >= _menu4) {$('.info_about .info_wrap').addClass('on');}
+
+		if (_scrollTop > 0 ) {
+			$('#header_area').addClass('on');
+			$('.main_visual').addClass('on');
+		} else {
+			$('#header_area').removeClass('on');
+			$('.main_visual').removeClass('on');
+		}
+	}
+
+	// 상단 고정 스크를 Progress
+	function checksubscroll(){
+		window.onscroll = function() {scrollWidth()};
+		function scrollWidth() {
+			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	  		var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	  		var scrolled = (winScroll / height) * 100;
+	  		document.getElementById("scrollBar").style.width = scrolled + "%";
+		}
+	}
+
+	// Skill List
+	function skillListCardFlip(){
+		$('.skill_list li').on('click', function(){
+			var status = $(this).hasClass('on');
+
+			if (status) { $(this).removeClass('on'); }
+			else { $(this).addClass('on').siblings().removeClass('on'); }
+		});
+
+		$(document).on('mouseenter focusin', '.skill_list li', function() {
+			$(this).find('.over').stop().fadeIn(250);
+		});
+
+		$(document).on('mouseleave focusout', '.skill_list li', function() {
+			$('.skill_list li .over').fadeOut(250);
+		});
+	}
+
+	portMenuListEvt();
+	menuScrollEvt();
+	checksubscroll();
+	skillListCardFlip();
+
+
+    console.log('%c UI Developer %c HEO.D.K ', 'background-color:#222; color:#fff; font-size:23px;',
+            'background-color:red; color:#fff; font-size:23px;');
+});
+</script>
+</html>

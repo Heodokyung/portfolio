@@ -1,0 +1,31 @@
+(function(){
+	// 캐쉬 방지
+	var date 		= new Date();
+		year  		= String( date.getFullYear() ),
+		month 		= String( date.getMonth() + 1 ),
+		day   		= String( date.getDate() ),
+		hour 		= String( date.getHours() ),
+		min 		= String( date.getMinutes() ),
+		sec 		= String( date.getSeconds() );
+
+		if (month < 10) { month = '0' + month; }
+		if (day < 10) { day = '0' + day; }
+		if (hour < 10) { hour = '0' + hour; }
+		if (min < 10) { min = '0' + min; }
+		if (sec < 10) { sec = '0' + sec; }
+
+		var fulldate 	= year + month + day + '_' + hour + min + sec;
+
+	var codeview = new Array();
+
+	document.write('<link rel="stylesheet" type="text/css" href="../../css/default.css?date'+ fulldate +'" />');
+	document.write('<link rel="stylesheet" type="text/css" href="../../css/cm.style.css?date'+ fulldate +'" />');
+	codeview.push({'url':'../../js/jquery-2.2.4.min.js', 'cashbuster':false});
+	codeview.push({'url':'../../js/jquery.event.drag-1.5.1.min.js', 'cashbuster':false});
+	codeview.push({'url':'../../js/ui.js?date'+ fulldate +'', 'cashbuster':false});
+	// codeview.push({'url':'../../js/jquery.touchSlider.js', 'cashbuster':false});
+
+	for(var i = 0, total = codeview.length; i < total; i++){
+		document.write('<script src="' +codeview[i].url + ((codeview[i].cashbuster) ?'?cb='+window._CACHE_BUSTER:'')+'" charset="utf-8"></'+'script>');
+	};
+})();

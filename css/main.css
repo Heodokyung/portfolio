@@ -1,0 +1,220 @@
+/************************************************
+    Decrition : 허도경 HEO.D.K
+    Version : 1.0
+
+    --- CSS LIST ---
+    01. MAIN STYLE CSS
+    02. MEDIA QUARY CSS
+************************************************/
+
+@charset "utf-8";
+
+/**************************
+    01. MAIN STYLE CSS
+***************************/
+.over {display:none; position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0, .4); color:#fff;}
+
+#wrap {overflow:inherit; height:100%;}
+#wrap.on {overflow:hidden;}
+#wrap.on #header_area {position:relative;}
+#wrap.on.main .port_list_wrap {padding-top:60px;}
+
+#header_area {position: fixed; height: 130px; background: #222; width: 100%; top: 0; left: 0; right: 0; z-index: 50;}
+
+/* Main */
+#logo {width:55px;}
+#wrapper {position:relative;}
+#scroller {width:100%;}
+#scroller.scroll {position:relative; overflow-x:scroll;}
+
+#wrapper .guide.scroll {display:inline-block;}
+.sort_wrap {padding:13px 25px 15px; background:#172336; z-index:10; color:#fff; font-family:"notoSansB";}
+.sort_wrap ul {overflow:hidden; background:#172336;}
+.sort_wrap ul li {float:left; padding:0 20px;}
+.sort_wrap ul li a {display:block; padding:20px 0 18px; font-weight:500; font-size:18px; line-height:18px; /* font-family:'Century Gothic'; */ color:#fff;}
+.sort_wrap ul li.on a {color:#eee; border-bottom:3px solid lime;}
+.sort_wrap ul li:first-child a {margin-left:10px;}
+.sort_wrap select {height:28px;}
+.sort_wrap .sch_txt {height:28px; border:0; width: 205px; padding-left: 10px; box-sizing:border-box;}
+
+.search_result {}
+.search_result .tit {margin:-20px 0 10px 15px;}
+
+.title, .sub_title {text-transform: uppercase; margin: 20px 30px 0; font-size: 42px; border-bottom: 3px solid #222; color:#222; font-family:"NotoSansB";}
+.sub_title {position:relative; border-bottom:0; margin:0 0 10px 0; padding-bottom:7px; font-size:24px;}
+.sub_title:after {display:inline-block; position:absolute; left:0; bottom:0; width:35px; border-bottom:2px solid #222; content:"";}
+
+/* Scroll 시 메인 해더 고정 */
+#header_area.on {height:65px;}
+#header_area.on #logo {top:-12px;}
+#header_area.on #logo.txt a {border:none;}
+#header_area.on #mobile {top:17px}
+#header_area.on .m_menu {top:65px;}
+#header_area.on #gnb {top:11px;}
+#header_area.on #gnb > li > a {font-size:20px; line-height:22px; font-weight:bold;}
+.main_visual.on {margin-top:65px;}
+
+/* Work Portfolio */
+.port_list_wrap {background:#fff;}
+.port_list {position:relative; padding:30px 10px 0; background:#fff; overflow:hidden;}
+.port_list li {position:relative; float:left; width:23%; margin:0 1% 35px; overflow:hidden; opacity:0; border-radius:5px;}
+.port_list.on li {animation:fadeIn .65s forwards ease-in-out; -webkit-animation:fadeIn .65s forwards ease-in-out;}
+.port_list li a {display:block; height:100%; cursor:pointer;}
+/*.port_list li a:focus img ,
+.port_list li a:hover img {animation:tada .85s forwards ease-in-out; -webkit-animation:jackInTheBox .85s forwards ease-in-out;}*/
+.port_list li a:focus img ,
+.port_list li a:hover img {transform:scale(1.1); -webkit-transform:scale(1.1);  transition: transform .7s; -webkit-transition: transform .7s;}
+
+.port_list li a img {width:100%; height:auto;}
+.port_list li .over .tit {margin-top:60px; font-size:18px; line-height:26px; text-align:center;}
+.port_list li .over .tit span.date {display:block; font-size:16px; margin-top:10px; letter-spacing:0;}
+
+.port_list li .over .more {display:block; position:absolute; left:50%; width:108px; height:40px; margin-left:-54px; bottom:-300%; background:url(../img/btn_more2.png) no-repeat;}
+.tmb_tit {position: absolute; left: 0; top: 50%; right: 0; bottom: 0; margin-top: -1em; font-size: 50px; text-align: center; color: #fff;}
+
+.ico_wrap {position:absolute; top:5px; right:5px;}
+span.ico {display:inline-block; padding:4px 6px; font-size:14px; font-weight: bold; font-family:Arial; vertical-align:top;  border-radius:4px 0 4px 4px; background:rgba(2, 2, 2, 0.6); color:#fff;}
+li.even span.ico {color:#000;}
+span.ico ~ .ico {margin-left:3px;}
+span.ico.new {color:#b6ff00;}
+
+.main_visual {position:relative; margin-top:130px; height:900px; background:url(../img/main/bg_main_visual.jpg) no-repeat 50% 50%; background-size:cover; background-attachment:fixed;}
+.main_visual .title_wrap {position:absolute; left:0; right:0; top:0; bottom:0; background:rgba(0, 0, 0, 0.4); z-index:5; padding:40px;}
+.main_visual .tit {font-size:72px; line-height:84px; color:#fff; font-family:"notoSansB";
+    animation:slideInDown .85s forwards ease-in-out; -webkit-animation:slideInDown .85s forwards ease-in-out;}
+.main_visual .tit span {text-stroke: 1px #fff; -webkit-text-stroke: 1px rgba(255, 255, 255, 0.774); color:transparent; background-clip: text; -webkit-background-clip: text;
+    -moz-background-clip: text;}
+.main_visual .sub_tit {margin-top:40px; font-size:18px; line-height:24px; color:#fff; word-break:keep-all; animation:fadeInLeft 1.2s ease-in-out; -webkit-animation:fadeInLeft 1.2s ease-in-out;}
+
+.main_visual img {display:none;}
+.container {background:#fff; word-break:keep-all;}
+
+/* Work Skill */
+.skill_list {max-width:1500px; padding:30px 10px; text-align:center; margin: 0 auto; overflow:hidden; opacity:0;}
+.skill_list.on {opacity:1; animation:zoomIn .65s forwards ease-in-out; -webkit-animation:zoomIn .65s forwards ease-in-out;}
+.skill_list li {display:inline-block; position:relative; width:22.5%; height:250px; margin:0 1% 35px 1%; box-sizing:border-box; text-align:center; color:#222; border:2px solid #eee; border-radius:5px; transition: 0.6s; transform-style: preserve-3d;}
+.skill_list li .over {border-radius:5px;}
+.skill_list li .over .tit {position:absolute; top:50%; left:50%; width:60px; height:60px; border-radius:50%; margin:-30px 0 0 -30px; text-align:center; color:#fff; border:2px solid #fff; line-height:60px; font-weight:bold; font-size:16px; z-index:5;}
+.skill_list li.on {transform: rotateY(180deg);}
+.skill_list li .front,
+.skill_list li .back {position: absolute; backface-visibility:hidden; -webkit-backface-visibility:hidden; width:100%; height:100%; box-sizing: border-box;}
+.skill_list li .front {z-index:5; transform: rotateY(0deg);}
+.skill_list li .front:before {display:inline-block; width:64px; height:64px; margin-top:60px; content:""; background-repeat:no-repeat; background-position:50% 50%; background-size:cover;}
+.skill_list li .back {display:flex; align-items: center; transform: rotateY(180deg); padding: 30px; background: #eee; color: #222; font-size: 14px; word-break: keep-all;}
+.skill_list li .front p {position:absolute; top:160px; left:0; right:0; text-align:center; width:100%;}
+/*.skill_list li a {display:block; height:100%;}*/
+
+.skill_list li:nth-of-type(1) .front:before {background-image:url(../img/main/ico_skill_list1.png);}
+.skill_list li:nth-of-type(2) .front:before {background-image:url(../img/main/ico_skill_list2.png);}
+.skill_list li:nth-of-type(3) .front:before {background-image:url(../img/main/ico_skill_list3.png);}
+.skill_list li:nth-of-type(4) .front:before {background-image:url(../img/main/ico_skill_list4.png);}
+.skill_list li:nth-of-type(5) .front:before {background-image:url(../img/main/ico_skill_list5.png);}
+.skill_list li:nth-of-type(6) .front:before {background-image:url(../img/main/ico_skill_list6.png);}
+.skill_list li:nth-of-type(7) .front:before {background-image:url(../img/main/ico_skill_list7.png);}
+.skill_list li:nth-of-type(8) .front:before {background-image:url(../img/main/ico_skill_list8.png);}
+.skill_list li:nth-of-type(9) .front:before {background-image:url(../img/main/ico_skill_list9.png);}
+.skill_list li:nth-of-type(10) .front::before {background-image:url(../img/main/ico_skill_list10.png);}
+.skill_list li:nth-of-type(11) .front::before {background-image:url(../img/main/ico_skill_list11.png);}
+.skill_list li:nth-of-type(12) .front::before {background-image:url(../img/main/ico_skill_list12.png);}
+
+/* Work info */
+.info_wrap {max-width:1500px; padding:20px 10px; margin:0 20px;}
+.info_wrap dl + dl,
+.info_wrap > div + div {margin-top:25px;}
+.info_wrap dt {font-weight:bold; font-size:18px; margin-bottom:7px;}
+.info_wrap  ul li {margin-top:5px; font-size:15px; line-height:20px; padding-left:10px; background:url(../img/ico_list_square.gif) no-repeat 2px 10px;}
+.info_wrap  ul li:first-of-type {margin-top:0;}
+.info_wrap dl {transform: translate3d(-200%, 0, 0);}
+.work_experience .info_wrap.on dl:nth-of-type(1) {animation:slideInLeft .6s forwards ease-in-out; -webkit-animation:slideInLeft .6s forwards ease-in-out;}
+.work_experience .info_wrap.on dl:nth-of-type(2) {animation:slideInLeft .9s forwards ease-in-out; -webkit-animation:slideInLeft .9s forwards ease-in-out;}
+.work_experience .info_wrap.on dl:nth-of-type(3) {animation:slideInLeft 1.2s forwards ease-in-out; -webkit-animation:slideInLeft 1.2s forwards ease-in-out;}
+.work_experience .info_wrap.on dl:nth-of-type(4) {animation:slideInLeft 1.5s forwards ease-in-out; -webkit-animation:slideInLeft 1.5s forwards ease-in-out;}
+.work_experience .info_wrap.on dl:nth-of-type(5) {animation:slideInLeft 1.8s forwards ease-in-out; -webkit-animation:slideInLeft 1.8s forwards ease-in-out;}
+
+.info_about {padding-bottom:40px;}
+.info_about .info_wrap.on > div:nth-of-type(1) dl {animation:slideInLeft .6s forwards ease-in-out; -webkit-animation:slideInLeft .6s forwards ease-in-out;}
+.info_about .info_wrap.on > div:nth-of-type(2) dl:nth-of-type(1) {animation:slideInLeft .9s forwards ease-in-out; -webkit-animation:slideInLeft .9s forwards ease-in-out;}
+.info_about .info_wrap.on > div:nth-of-type(2) dl:nth-of-type(2) {animation:slideInLeft 1.2s forwards ease-in-out; -webkit-animation:slideInLeft 1.2s forwards ease-in-out;}
+.info_about .info_wrap.on > div:nth-of-type(2) dl:nth-of-type(3) {animation:slideInLeft 1.5s forwards ease-in-out; -webkit-animation:slideInLeft 1.5s forwards ease-in-out;}
+.info_about .info_wrap.on > div:nth-of-type(2) dl:nth-of-type(4) {animation:slideInLeft 1.8s forwards ease-in-out; -webkit-animation:slideInLeft 1.8s forwards ease-in-out;}
+
+
+.progressbar {position:fixed; width:0; height:5px; left:0; top:0; background:#ffd700; transition: width 0.3s ease; -webkit-transition: width 0.3s ease; z-index:10;}
+
+
+/* movement_wrap */
+.movement_wrap {position:absolute; left:50%; bottom:45px; z-index:10;}
+.movement_wrap div {position:relative; width:36px; height:54px; border-radius: 20px; border:2px solid #fff; }
+.movement_wrap div em {display:inline-block; width:4px; height:4px; background:#fff; text-indent:-9999px; border-radius:2px; position:absolute; top:20%; left:45%; animation-name:mainMouse; animation-iteration-count: infinite; animation-timing-function: ease-in-out; animation-fill-mode:forwards; animation-duration: 2s;}
+@keyframes mainMouse {
+    0%{top:20%;}
+    100%{top:80%;}
+}
+/*******************************
+    02. MEDIA QUARY CSS
+********************************/
+/* MIN-WIDTH */
+@media only screen and (min-width:480px){
+    .port_list li {width:100%;}
+}
+
+@media only screen and (min-width:639px){
+    .port_list li {width:50%;}
+}
+
+@media only screen and (min-width:1023px){
+    .port_list li {width:23%; margin:0 1% 35px}
+}
+
+@media only screen and (min-width:1500px){
+    .port_list li {width:18%; margin:0 1% 35px}
+}
+
+
+/* MAX-WIDTH */
+@media screen and (max-width:1240px)  {
+	.port_list li {width:30%; margin:0 1.66% 30px;}
+	.port_list li .over .tit span {font-size:22px; margin-top:0;}
+}
+
+@media only screen and (max-width:960px) {
+    .skill_list li {width:45%; margin:0 2% 20px 2%;}
+    .main_visual {height:inherit;}
+    .main_visual img {display:block; width:100%; height:auto;}
+}
+
+@media screen and (max-width:850px) {
+    .info_wrap  ul li br {display:none;}
+    .movement_wrap,
+    .main_visual .sub_tit {display:none;}
+	.port_list li {width:46%; margin:2% 2% 20px 2%;}
+	.port_list {padding: 13px 10px 10px;}
+}
+
+@media screen and (max-width:420px) {
+    .sort_wrap select,
+    .sort_wrap .sch_txt {width:49%;}
+}
+
+@media screen and (max-width:560px) {
+    .main_visual .title_wrap {padding:20px;}
+    .main_visual .tit {font-size:42px; line-height:48px;}
+    .main_visual .sub_tit {display:none;}
+
+	.port_list li {width:96%; margin:2%;}
+	.port_list li .over .tit {font-size:16px;}
+	.port_list li .over .tit span {margin-top:10px; font-size:18px;}
+    .skill_list li {width:100%; margin:0 0 20px 0;}
+    .over {display:block;}
+}
+
+@media only screen and (max-width:380px) {
+    .port_list li {height:auto;}
+}
+
+@media only screen and (max-width:360px) {
+    #logo a {padding-left:0}
+}
+
+
+
