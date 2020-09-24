@@ -31,15 +31,13 @@
 .sort__wrap {position:relative; padding:8px 30px; background:#172336; z-index:10; color:#fff; font-family:"notoSansB";}
 .sort__wrap label {position:absolute; top:20px;}
 /* Custom Select */
-.sort__wrap .select {position: relative; display: flex; width:17em; height: 3em; line-height: 3; margin-left:65px; background: #2c3e50; overflow: hidden; border-radius: .25em;}
+.sort__wrap .select {position: relative; display: flex; width:13em; height: 3em; line-height: 3; margin-left:65px; background: #2c3e50; overflow: hidden; border-radius: .25em;}
 .sort__wrap select {height:100%; font-size:16px;}
 .sort__wrap .sch_txt {height:28px; border:0; width: 205px; padding-left: 10px; box-sizing:border-box;}
 /* Arrow */
 .sort__wrap .select::after {content: '\25BC'; position: absolute; top: 0; right: 0; padding: 0 1em; background: #34495e; cursor: pointer; pointer-events: none; -webkit-transition: .25s all ease; -o-transition: .25s all ease; transition: .25s all ease;}
 /* Transition */
 .sort__wrap .select:hover::after {color: #f39c12;}
-
-
 
 .search_result {}
 .search_result .tit {margin:-20px 0 10px 15px;}
@@ -124,7 +122,7 @@ span.ico.new {color:#b6ff00;}
 /* Work info */
 .step--list__guide > ul {position:relative;}
 .step--list__guide > ul:before {position: absolute; height: calc(100% - 95px); content: ""; border-left: 1px dashed #172336; top: 9px; left: -1px; bottom: 38px;}
-.info__about .step--list__guide > ul:before {height: calc(100% - 115px);}
+.info__about .step--list__guide > ul:before {height: calc(100% - 105px);}
 .step--list__guide > ul > li {position:relative; margin-top:30px; padding-left:20px; font-size:20px; word-break:keep-all;}
 .step--list__guide > ul > li .desc-img {margin-top:20px;}
 .step--list__guide > ul > li .desc-img img {width:400px; height:auto;}
@@ -135,7 +133,8 @@ span.ico.new {color:#b6ff00;}
 .step--list__guide > ul > li:first-of-type {margin-top:0;}
 
 .habit_saving .step--list__guide ul {margin-top:60px;}
-.info__wrap {max-width:1500px; padding:20px 10px; margin:0 20px;}
+.info__wrap {max-width:1500px; padding:20px 10px; margin:0 20px; opacity:0;}
+.info__wrap.on {animation:fadeIn .65s forwards ease-in-out; -webkit-animation:fadeIn .65s forwards ease-in-out;}
 .info__wrap dl + dl,
 .info__wrap > div + div {margin-top:25px;}
 .info__wrap dt {font-weight:bold; font-size:18px; margin-bottom:7px;}

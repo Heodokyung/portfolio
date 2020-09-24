@@ -138,8 +138,8 @@ header .btn_menu.on span:after {margin-top: 0; -webkit-transform: rotate(-45deg)
 #content .description > li > ul > li {position:relative; padding-left:10px;}
 #content .description > li > ul > li:before {display:inline-block; position:absolute; content:""; width:4px; border-bottom:1px solid #222; top:14px; left:0;}
 
-#content .description .progress > span {position:relative; display:inline-block; width:180px; height:30px; border-radius:5px 0 5px 5px; text-align:center; background:#000;}
-#content .description .progress .bar {position:absolute; top:0; left:0; height:30px; border-radius:4px 0 4px 4px; background:#3e881c;}
+#content .description .progress > span {position:relative; display:inline-block; width:180px; height:30px; border-radius:4px; text-align:center; background:#000;}
+#content .description .progress .bar {position:absolute; top:0; left:0; height:30px; border-radius:4px; background:#3e881c;}
 #content .description .progress span {position:relative; font-size:18px; margin-left:5px; font-weight:bold; color:#fff; vertical-align:middle; line-height:23px}
 #content .description .site_info {display:inline-block; margin-top:10px; padding:3px 15px; font-weight:bold; font-size:20px; letter-spacing:-1px; border-radius:9px 0 9px 9px; background:#000; color:#fff;}
 #content .description .site_info a {display:block; color:#fff;}

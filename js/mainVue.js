@@ -1,12 +1,12 @@
 // 오늘 날짜
-var date = new Date(),
+let date = new Date(),
     year     = date.getFullYear(),
     month    = date.getMonth() + 1,
     day      = date.getDate();
 
 if (month < 10) { month = '0' + month; }
 if (day < 10)   { day = '0' + day; }
-var fulldate =  year + '.' + month + '.' + day;
+let fulldate =  year + '.' + month + '.' + day;
 
 Vue.component('portfolio-items', {
     props : ['items'],
@@ -372,11 +372,11 @@ new Vue({
     methods:{
         sortChange: function ()
         {
-            var evtTagert = this.sort;
-            $('#wrap.main .port_list li').css({'display' : 'block'});
+            let evtTagert = this.sort;
+            $('#wrap.main .port__list li').css({'display' : 'block'});
 
-            if (evtTagert == 'all') { $('#wrap.main .port_list li').css({ 'display' : 'block' }); }
-            else { $('#wrap.main .port_list li').not( 'li.'+ evtTagert +'' ).css({'display' : 'none'}); }
+            if (evtTagert == 'all') { $('#wrap.main .port__list li').css({ 'display' : 'block' }); }
+            else { $('#wrap.main .port__list li').not( 'li.'+ evtTagert +'' ).css({'display' : 'none'}); }
 
             $('#wrap').after( '<div class="mask loading">암막효과 Layer</div>' );
             $('.mask').css({
@@ -392,19 +392,19 @@ new Vue({
         layerOpen :function ()
         {
             // 경력 자동 계산
-            var betweenY,
+            let betweenY,
                 betweenM;
-            var countDay = 1000 * 60 * 60 * 24;
-            var countMonth = countDay * 30;
+            let countDay = 1000 * 60 * 60 * 24;
+            let countMonth = countDay * 30;
 
             function commonCarrer()
             {
-                var nowDate = new Date();
-                var compareDate = "2018-08-01";
-                var compareArray = compareDate.split("-");
-                var compareObj = new Date(compareArray[0], Number(compareArray[1])-1, compareArray[2]);
+                let nowDate = new Date();
+                let compareDate = "2018-08-01";
+                let compareArray = compareDate.split("-");
+                let compareObj = new Date(compareArray[0], Number(compareArray[1])-1, compareArray[2]);
 
-                var careerD = nowDate - compareObj;
+                let careerD = nowDate - compareObj;
                 betweenY = 0;
                 betweenM = parseInt( careerD / countMonth )
 
@@ -421,16 +421,16 @@ new Vue({
                 // 입사시 1개월부터 시작 : Default는 0
                 betweenM = betweenM + 1;
 
-                var total = ' (' + betweenY + '년 ' + betweenM + '개월)';
+                let total = ' (' + betweenY + '년 ' + betweenM + '개월)';
                 return total;
             }
 
             function careerCalc()
             {
-                var companyTotalYear = 7; // 년
-                var companyMonth = 7; // 개월
-                var companyTotalMonth = companyMonth + betweenM;
-                var temp = 0;
+                let companyTotalYear = 7; // 년
+                let companyMonth = 7; // 개월
+                let companyTotalMonth = companyMonth + betweenM;
+                let temp = 0;
 
                 while( companyTotalMonth >= 12 )
                 {
@@ -440,12 +440,12 @@ new Vue({
                 }
 
                 commonCarrer();
-                var total =  ( companyTotalYear + betweenY ) + '년 ' + (companyTotalMonth) + '개월';
+                let total =  ( companyTotalYear + betweenY ) + '년 ' + (companyTotalMonth) + '개월';
                 return total;
             }
             careerCalc();
 
-            var layerTemp;
+            let layerTemp;
             layerTemp =
             '<div class="layer_pop">' +
                 '<div class="pop_content">' +
@@ -560,7 +560,7 @@ new Vue({
     {
         searching: function ()
         {
-            var query = this.query.toLowerCase();
+            let query = this.query.toLowerCase();
 
             if(query == undefined || query == "") {
                 return;
