@@ -62,7 +62,7 @@ input[type="file"] {vertical-align:middle; height:22px; width:80%; margin-right:
 /*************************
 	03. Page Top Button
 **************************/
-.scrollup {display:none; position:fixed; bottom:30px; right:15px; width:76px; height:86px; z-index:1000; background:url(../img/btn_scrollpng.png) no-repeat;}
+.scrollup {display:none; position:fixed; bottom:30px; right:15px; width:76px; height:86px; z-index:1000; background:url(../img/btn_scrollpng.png) no-repeat; border:1px solid #f8f8f8; border-radius:8px; overflow:hidden;}
 .scrollup span {display:inline-block; position:absolute; top:-23px; left:0; height:20px; font-size: 12px; border-radius:3px; line-height:19px; color:#fff; background: rgba(0,0,0,0.7); width:0; overflow:hidden;}
 .scrollup:hover span,
 .scrollup:focus span {width:72px; transition: width 0.6 ease-in-out; -webkit-transition: width 0.6s ease-in-out; transform-origin: center;}
