@@ -1,3 +1,10 @@
+@import url(default.css);
+@import url(fonts.css);
+@import url(layout.css);
+@import url(animate.css);
+
+@charset 'UTF-8';
+
 /************************************************
     Decrition :허도경 HEO.D.K
     Version :1.0
@@ -8,13 +15,6 @@
     03. LAYER POPUP CSS
     04. MEDIA QUARY CSS
 ************************************************/
-
-@import url(default.css);
-@import url(fonts.css);
-@import url(layout.css);
-@import url(animate.css);
-
-@charset "utf-8";
 
 /**********************
     01. Page STYLE

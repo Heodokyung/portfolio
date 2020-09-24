@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+
 /************************************************
     Decrition : 허도경 HEO.D.K
     Version : 1.0
@@ -6,8 +8,6 @@
     01. MAIN STYLE CSS
     02. MEDIA QUARY CSS
 ************************************************/
-
-@charset "utf-8";
 
 /**************************
     01. MAIN STYLE CSS
@@ -37,7 +37,7 @@
 /* Arrow */
 .sort__wrap .select::after {content: '\25BC'; position: absolute; top: 0; right: 0; padding: 0 1em; background: #34495e; cursor: pointer; pointer-events: none; -webkit-transition: .25s all ease; -o-transition: .25s all ease; transition: .25s all ease;}
 /* Transition */
-.sort__wrap .select:hover::after {color: #f39c12;}
+.sort__wrap .select:hover::after {color: #f6ee0b;}
 
 .search_result {}
 .search_result .tit {margin:-20px 0 10px 15px;}
@@ -62,8 +62,6 @@
 .port__list li {position:relative; float:left; width:23%; margin:0 1% 35px; overflow:hidden; opacity:0; border-radius:5px;}
 .port__list.on li {animation:fadeIn .65s forwards ease-in-out; -webkit-animation:fadeIn .65s forwards ease-in-out;}
 .port__list li a {display:block; height:100%; cursor:pointer;}
-/*.port__list li a:focus img ,
-.port__list li a:hover img {animation:tada .85s forwards ease-in-out; -webkit-animation:jackInTheBox .85s forwards ease-in-out;}*/
 .port__list li a:focus img ,
 .port__list li a:hover img {transform:scale(1.1); -webkit-transform:scale(1.1);  transition: transform .7s; -webkit-transition: transform .7s;}
 

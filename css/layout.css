@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+
 /************************************************
     Decrition : 허도경 HEO.D.K
     Version : 1.0
@@ -8,8 +10,6 @@
     03. CONTAINER LAYOUT CSS
     04. FOOTER LAYOUT CSS
 ************************************************/
-
-@charset "utf-8";
 
 /*******************************
     01. HEADER LAYOUT CSS
@@ -51,7 +51,7 @@ header .btn_menu.on span:after {margin-top: 0; -webkit-transform: rotate(-45deg)
 #header_area .m_menu > li {display:block; padding:11px 20px; font-size:18px; font-weight:bold; color:#ddd;}
 #header_area .m_menu > li > a {color:#ddd;}
 #header_area .m_menu > li a:hover,
-#header_area .m_menu > li a:focus {color:#5b8d29;}
+#header_area .m_menu > li a:focus {color:#f6ee0b;}
 #header_area .m_menu > li.on a {text-decoration:underline;}
 
 #header_area .m_menu > li > ul {margin-left:10px;}
