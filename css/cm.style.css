@@ -128,7 +128,7 @@
 .board.col .tgl_cont {display:none;}
 .board.col .cnt {margin-left:2px; color:#ff4800; font-family:"notoSansB"; vertical-align:middle; letter-spacing:-1px;}
 
-.btn_port_list {display:block; margin:15px 0 50px; background:#222; padding:8px 0px 10px; font-size:19px; text-align:center; border-radius:9px 0 9px 9px; color:#fff; font-family:"notoSansB";}
+.btn_port_list {display:block; margin-top:20px; background:#222; padding:8px 0 9px; font-size:18px; text-align:center; border-radius:8px; color:#fff; font-family:"notoSansB";}
 
 /**************************
     03. LAYER POPUP CSS

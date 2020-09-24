@@ -110,7 +110,7 @@ header .btn_menu.on span:after {margin-top: 0; -webkit-transform: rotate(-45deg)
 /*******************************
     03. CONTAINER LAYOUT CSS
 ********************************/
-#content_wrap {position:relative;margin: 163px auto 0;}
+#content_wrap {position:relative; margin: 163px auto 0; padding-bottom:48px;}
 #content_wrap:after {display:block; clear:both; content:"";}
 
 .tit_bar {position:absolute; top: -157px; left:303px; letter-spacing:-2px;}

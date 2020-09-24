@@ -42,7 +42,7 @@ new Vue({
                 date : "2018.08.01 ~ "+fulldate+" ",
                 link : "detail/mobile/m_finnq_app_v2.html",
                 imgSrc : "img/portfolio/finnq_m.jpg",
-                title : "Finnq<br />모바일 앱 서비스 2.0 운영",
+                title : "Finnq<br />모바일 앱 서비스 운영",
                 sch : "2018 finnq 핀크 mobile app 앱"
             },
             {
