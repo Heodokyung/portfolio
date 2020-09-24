@@ -34,7 +34,10 @@ input[type=submit] {margin:0; padding:0; border:0; cursor:pointer;}
 label {cursor:pointer;}
 button {border:0; vertical-align:middle; cursor:pointer; overflow:visible; background:transparent;}
 button::-moz-focus-inner {border:0; padding:0;}
-select {border:1px solid #e0e0e0; height:24px; padding:3px 3px 3px 4px; vertical-align:middle; line-height:24px; background:#fff;}
+/* Reset Select */
+select { -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; appearance: none; outline: 0; box-shadow: none; border: 0 !important; background: #2c3e50; background-image: none; flex: 1; padding: 0 .5em; color: #fff; cursor: pointer;}
+/* Remove IE arrow */
+select::-ms-expand {display: none;}
 input[type="file"] {vertical-align:middle; height:22px; width:80%; margin-right:6px;}
 
 /*************************

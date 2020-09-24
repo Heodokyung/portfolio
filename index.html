@@ -43,7 +43,7 @@
 					UI & UX<br>
 					<span>Front End</span> Developer
 				</p>
-				<p class="sub_tit">웹표준 및 웹 접근성 지식으로 사용자에게 보다 좋은 UI를 제공하려고 노력합니다.<br> 또한 개발자 직무 경험을 바탕으로 개발팀과 원활한 커뮤니케이션을 진행하고 디자인팀과 보다 좋은 GUI를 구현하기 위해 소통합니다.</p>
+				<p class="sub_tit">웹표준 및 웹 접근성 지식으로 사용자에게 보다 좋은 UI를 제공하려고 노력합니다.<br> 개발자 직무 경험을 바탕으로 개발에 용이한 간결한 코드로 작업을 진행하며<br> 디자인팀과 보다 좋은 GUI를 구현하기 위해 소통하며 협업합니다.</p>
 			</div>
 			<img src="img/main/bg_main_visual.jpg" alt="">
 
@@ -58,9 +58,9 @@
 		<article id="wrapper">
 			<article>
 				<span class="guide"></span>
-				<div id="scroller">
-					<section class="sort_wrap">
-						<label for="sort">SORT :</label>
+				<div class="sort__wrap">
+					<label for="sort">SORT :</label>
+					<section class="select">
 						<select id="sort" title="Sort 기능" v-model="sort" @change="sortChange">
 							<option value="all">ALL</option>
 							<option value="y2018">2018</option>
@@ -76,11 +76,6 @@
 							<option value="ui">Front-End [UI]</option>
 							<option value="dev">Back-End</option>
 						</select>
-						<!--
-						<span class="sch_wrap">
-							<input name="" v-model.trim="query" class="sch_txt" placeholder="SEARCH" />
-						</span>
-						-->
 					</section>
 				</div>
 			</article>

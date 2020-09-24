@@ -28,14 +28,18 @@
 #scroller.scroll {position:relative; overflow-x:scroll;}
 
 #wrapper .guide.scroll {display:inline-block;}
-.sort_wrap {padding:13px 25px 15px; background:#172336; z-index:10; color:#fff; font-family:"notoSansB";}
-.sort_wrap ul {overflow:hidden; background:#172336;}
-.sort_wrap ul li {float:left; padding:0 20px;}
-.sort_wrap ul li a {display:block; padding:20px 0 18px; font-weight:500; font-size:18px; line-height:18px; /* font-family:'Century Gothic'; */ color:#fff;}
-.sort_wrap ul li.on a {color:#eee; border-bottom:3px solid lime;}
-.sort_wrap ul li:first-child a {margin-left:10px;}
-.sort_wrap select {height:28px;}
-.sort_wrap .sch_txt {height:28px; border:0; width: 205px; padding-left: 10px; box-sizing:border-box;}
+.sort__wrap {position:relative; padding:8px 30px; background:#172336; z-index:10; color:#fff; font-family:"notoSansB";}
+.sort__wrap label {position:absolute; top:20px;}
+/* Custom Select */
+.sort__wrap .select {position: relative; display: flex; width:17em; height: 3em; line-height: 3; margin-left:65px; background: #2c3e50; overflow: hidden; border-radius: .25em;}
+.sort__wrap select {height:100%; font-size:16px;}
+.sort__wrap .sch_txt {height:28px; border:0; width: 205px; padding-left: 10px; box-sizing:border-box;}
+/* Arrow */
+.sort__wrap .select::after {content: '\25BC'; position: absolute; top: 0; right: 0; padding: 0 1em; background: #34495e; cursor: pointer; pointer-events: none; -webkit-transition: .25s all ease; -o-transition: .25s all ease; transition: .25s all ease;}
+/* Transition */
+.sort__wrap .select:hover::after {color: #f39c12;}
+
+
 
 .search_result {}
 .search_result .tit {margin:-20px 0 10px 15px;}
@@ -45,7 +49,7 @@
 .sub_title:after {display:inline-block; position:absolute; left:0; bottom:0; width:35px; border-bottom:2px solid #222; content:"";}
 
 /* Scroll 시 메인 해더 고정 */
-#header_area.on {height:65px;}
+#header_area.on {height:65px; border-bottom:2px solid #fff;}
 #header_area.on #logo {top:-12px;}
 #header_area.on #logo.txt a {border:none;}
 #header_area.on #mobile {top:17px}
@@ -78,7 +82,7 @@ li.even span.ico {color:#000;}
 span.ico ~ .ico {margin-left:3px;}
 span.ico.new {color:#b6ff00;}
 
-.main_visual {position:relative; margin-top:130px; height:900px; background:url(../img/main/bg_main_visual.jpg) no-repeat 50% 50%; background-size:cover; background-attachment:fixed;}
+.main_visual {position:relative; margin-top:130px; height:810px; background:url(../img/main/bg_main_visual.jpg) no-repeat 50% 50%; background-size:cover; background-attachment:fixed;}
 .main_visual .title_wrap {position:absolute; left:0; right:0; top:0; bottom:0; background:rgba(0, 0, 0, 0.4); z-index:5; padding:40px;}
 .main_visual .tit {font-size:72px; line-height:84px; color:#fff; font-family:"notoSansB";
     animation:slideInDown .85s forwards ease-in-out; -webkit-animation:slideInDown .85s forwards ease-in-out;}
@@ -192,8 +196,8 @@ span.ico.new {color:#b6ff00;}
 }
 
 @media screen and (max-width:420px) {
-    .sort_wrap select,
-    .sort_wrap .sch_txt {width:49%;}
+    .sort__wrap select,
+    .sort__wrap .sch_txt {width:49%;}
 }
 
 @media screen and (max-width:560px) {
