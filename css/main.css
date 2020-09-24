@@ -159,7 +159,6 @@ span.ico.new {color:#b6ff00;}
 
 .progressbar {position:fixed; width:0; height:5px; left:0; top:0px; background:#ffd700; transition: width 0.3s ease; -webkit-transition: width 0.3s ease; z-index:10;}}
 
-
 /* movement_wrap */
 .movement__wrap {position:absolute; left:50%; bottom:45px; z-index:10;}
 .movement__wrap div {position:relative; width:36px; height:54px; border-radius: 20px; border:2px solid #fff; }
@@ -168,6 +167,7 @@ span.ico.new {color:#b6ff00;}
     0%{top:20%;}
     100%{top:80%;}
 }
+
 /*******************************
     02. MEDIA QUARY CSS
 ********************************/
