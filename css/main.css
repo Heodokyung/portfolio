@@ -69,11 +69,12 @@
 .port__list li .over .tit {margin-top:60px; font-size:18px; line-height:26px; text-align:center;}
 .port__list li .over .tit span.date {display:block; font-size:16px; margin-top:10px; letter-spacing:0;}
 
-.port__list li .over .more {display:block; position:absolute; left:50%; width:108px; height:40px; margin-left:-54px; bottom:-300%; background:url(../img/btn_more2.png) no-repeat;}
+.port__list li .over .more {display:inline-block; position:absolute; left:50%; width:108px; margin-left:-54px; bottom:-300%; font-size:16px; font-weight:bold; padding:10px 0 12px; border-top:2px solid #fff; border-bottom:2px solid #fff; color:#fff; text-align:center; /*background:url(../img/btn_more2.png) no-repeat;*/ }
+.port__list li .over .more:after {display:inline-block; content:"+"; font-size:14px; margin-left:5px; color:#fff;}
 .tmb_tit {position: absolute; left: 0; top: 50%; right: 0; bottom: 0; margin-top: -1em; font-size: 50px; text-align: center; color: #fff;}
 
 .ico_wrap {position:absolute; top:5px; right:5px;}
-span.ico {display:inline-block; padding:4px 6px; font-size:14px; font-weight: bold; font-family:Arial; vertical-align:top;  border-radius:4px 0 4px 4px; background:rgba(2, 2, 2, 0.6); color:#fff;}
+span.ico {display:inline-block; padding:4px 6px; font-size:12px; font-family:Arial; vertical-align:top; border-radius:4px; background:rgba(2, 2, 2, 0.6); color:#fff;}
 li.even span.ico {color:#000;}
 span.ico ~ .ico {margin-left:3px;}
 span.ico.new {color:#b6ff00;}
@@ -151,11 +152,11 @@ span.ico.new {color:#b6ff00;}
 .info__about .info__wrap.on li:nth-of-type(3) dl {animation:slideInLeft 1.2s forwards ease-in-out; -webkit-animation:slideInLeft 1.2s forwards ease-in-out;}
 .info__about .info__wrap.on li:nth-of-type(4) dl {animation:slideInLeft 1.5s forwards ease-in-out; -webkit-animation:slideInLeft 1.5s forwards ease-in-out;}
 .info__about .info__wrap.on li:nth-of-type(5) dl {animation:slideInLeft 1.8s forwards ease-in-out; -webkit-animation:slideInLeft 1.8s forwards ease-in-out;}
-.info__about .info__wrap.on li:nth-of-type(6) dl {animation:slideInLeft 2.1s forwards ease-in-out; -webkit-animation:slideInLeft 2.1s forwards ease-in-out;}
+.info__about .info__wrap.on li:nth-of-type(6) dl {animation:slideInLeft 2s forwards ease-in-out; -webkit-animation:slideInLeft 2s forwards ease-in-out;}
 .info__about .info__wrap li a {color:inherit;}
 
 
-.progressbar {position:fixed; width:0; height:5px; left:0; top:0px; background:#ffd700; transition: width 0.3s ease; -webkit-transition: width 0.3s ease; z-index:10;}}
+.progressbar {position:relative; width:0; height:5px; left:0; top:0px; background:#ffd700; transition: width 0.3s ease; -webkit-transition: width 0.3s ease; z-index:10;}
 
 /* movement_wrap */
 .movement__wrap {position:absolute; left:50%; bottom:45px; z-index:10;}
@@ -195,7 +196,7 @@ span.ico.new {color:#b6ff00;}
 }
 
 @media only screen and (max-width:960px) {
-    .skill_list li {width:45%; margin:0 2% 20px 2%;}
+    .skill_list li {width:30%; margin:0 1% 15px 1%;}
     .main__visual {height:inherit;}
     .main__visual img {display:block; width:100%; height:auto;}
 }
@@ -206,6 +207,7 @@ span.ico.new {color:#b6ff00;}
     .main__visual .sub_tit {display:none;}
 	.port__list li {width:46%; margin:2% 2% 20px 2%;}
 	.port__list {padding: 13px 10px 10px;}
+    .skill_list li {width:45%; margin:0 2% 20px 2%;}
 }
 
 @media screen and (max-width:420px) {

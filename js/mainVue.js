@@ -24,7 +24,7 @@ Vue.component('portfolio-items', {
 						'<em v-html="items.title"></em>' +
 						'<span class="date">{{ items.date }}</span>' +
 					'</p>' +
-					'<span class="blind more">자세히보기</span>' +
+					'<span class="more">자세히보기</span>' +
 				'</div>' +
 			'</a>' +
 		'</li>'
