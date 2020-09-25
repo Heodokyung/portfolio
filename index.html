@@ -32,9 +32,7 @@
 				<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md" target="_blank">MarkUpGuide</a></li>
 			</ul>
 		</header>
-		<div class="progressbar" id="scrollBar">
-			<span class="test"></span>
-		</div>
+		<div class="progressbar" id="scrollBar"></div>
 	</section>
 
 
@@ -260,7 +258,7 @@
 								<ul>
 									<li>기간 : 2018.08. ~ 재직중</li>
 									<li>소속 / 직급 : Platform개발 2팀 / 매니저</li>
-									<li>담당업무 : Finnq App/Web에서 제공하는 다양한 서비스 운영 및 신규 서비스 개발, 배포를 담당하고 있습니다.<br /> Sketch와 Zepline을 통해 기획자 및 디자이너와 협업을 진행하고 있으며 Jira, Wiki Confluence, Slack을 사용하여 이슈처리 대응 및 히스토리 관리를 합니다.</li>
+									<li>담당업무 : Finnq App/Web에서 제공하는 다양한 서비스 운영 및 신규 서비스 개발, 젠킨스(Jenkins)를 사용해 배포를 진행하고 있습니다.<br /> Sketch와 Zepline을 사용하여 기획자 및 디자이너와 협업을 진행하고 있으며 Jira, Wiki Confluence, Slack을 사용하여 이슈처리 대응 및 히스토리 관리를 합니다.</li>
 								</ul>
 							</dd>
 						</dl>
@@ -272,7 +270,7 @@
 								<ul>
 									<li>기간 : 2016.01. ~ 2018.07.</li>
 									<li>소속 / 직급 : 채널사업부 / 책임</li>
-									<li>담당업무 : 웹 퍼블리싱 PL, 웹 접근성 검수, 웹 표준, 웹/모바일 퍼블리싱, UI 개발</li>
+									<li>담당업무 : 웹 퍼블리싱 PL, 웹 접근성 검수(웹 접근성 프로젝트 진행), 웹 표준/시멘틱 마크업, 공통 퍼블리싱 가이드 제작, 웹/모바일 퍼블리싱, 공통 UI 개발 / GUI 구현</li>
 								</ul>
 							</dd>
 						</dl>
@@ -284,7 +282,7 @@
 								<ul>
 									<li>기간 : 2014.02. - 2015.12.</li>
 									<li>소속 / 직급 : 퍼블리싱 그룹 / 주임</li>
-									<li>담당업무 : 웹 접근성 검수, 웹 표준, 웹/모바일 퍼블리싱, UI 개발</li>
+									<li>담당업무 : 웹 퍼블리싱 PL, 웹 접근성 검수(웹 접근성 프로젝트 진행), 웹 표준/시멘틱 마크업, 공통 퍼블리싱 가이드 제작, 웹/모바일 퍼블리싱, 공통 UI 개발 / GUI 구현</li>
 								</ul>
 							</dd>
 						</dl>
@@ -296,7 +294,7 @@
 								<ul>
 									<li>기간 : 2012.08. - 2013.09.</li>
 									<li>소속 / 직급 : 웹 개발팀 / 대리</li>
-									<li>담당업무 : Java, Jsp, Oracel, SQL, iBatis등</li>
+									<li>담당업무 : Java 웹 개발, Jsp, Oracel, SQL, Spring, 전자정부 프레임워크 사용</li>
 								</ul>
 							</dd>
 						</dl>
@@ -421,7 +419,7 @@
 $(function(){
 
 	// Common UI
-	var windowH 	= $(window).height(),
+	let windowH 	= $(window).height(),
 		documentH 	= $(document).height(),
 		easing	 	= 'swing';
 
@@ -453,8 +451,8 @@ $(function(){
 
 	// 화면 스크롤 시 페이지 목록 호출 이벤트
 	function menuScrollEvt(){
-		var _num = 700;
-		var _menu1 = $('.port__list--wrap').offset().top - 500,
+		let _num = 700;
+		let _menu1 = $('.port__list--wrap').offset().top - 500,
 			_menu2 = $('.skill_list').offset().top - 500,
 			_menu3 = $('.work_experience .info__wrap').offset().top - _num,
 			_menu4 = $('.info__about .info__wrap').offset().top - _num,
@@ -478,9 +476,9 @@ $(function(){
 	function checksubscroll(){
 		window.onscroll = function() {scrollWidth()};
 		function scrollWidth() {
-			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-	  		var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-	  		var scrolled = (winScroll / height) * 100;
+			let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	  		let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	  		let scrolled = (winScroll / height) * 100;
 	  		document.getElementById("scrollBar").style.width = scrolled + "%";
 		}
 	}
@@ -488,7 +486,7 @@ $(function(){
 	// Skill List
 	function skillListCardFlip(){
 		$('.skill_list li').on('click', function(){
-			var status = $(this).hasClass('on');
+			let status = $(this).hasClass('on');
 
 			if (status) { $(this).removeClass('on'); }
 			else { $(this).addClass('on').siblings().removeClass('on'); }
@@ -507,7 +505,6 @@ $(function(){
 	menuScrollEvt();
 	checksubscroll();
 	skillListCardFlip();
-
 
     console.log('%c UI Developer %c HEO.D.K ', 'background-color:#222; color:#fff; font-size:23px;',
             'background-color:red; color:#fff; font-size:23px;');
