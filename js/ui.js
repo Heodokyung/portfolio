@@ -826,7 +826,7 @@ $(function(){
 			'<footer>' +
 				'<div class="footer_area width_fix">' +
 					'<p class="footer_logo"><img src="../../img/footer_whale.png" alt="whale tail" /></p>' +
-					'<div class="copyright1">' +
+					'<div class="copyright">' +
 						'<p>Copyright © limewhale.com All rights reserved.</p>' +
 						'<address><a href="mailto:limewhale@daum.net">limewhale@daum.net</a></address>' +
 					'</div>' +
