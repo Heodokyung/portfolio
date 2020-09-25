@@ -159,7 +159,7 @@ span.ico.new {color:#b6ff00;}
 .progressbar {position:relative; width:0; height:5px; left:0; top:0px; background:#ffd700; transition: width 0.3s ease; -webkit-transition: width 0.3s ease; z-index:10;}
 
 /* movement_wrap */
-.movement__wrap {position:absolute; left:50%; bottom:45px; z-index:10;}
+.movement__wrap {position:absolute; left:50%; margin-left:-18px; bottom:45px; z-index:10;}
 .movement__wrap div {position:relative; width:36px; height:54px; border-radius: 20px; border:2px solid #fff; }
 .movement__wrap div em {display:inline-block; width:4px; height:4px; background:#fff; text-indent:-9999px; border-radius:2px; position:absolute; top:20%; left:45%; animation-name:mainMouse; animation-iteration-count: infinite; animation-timing-function: ease-in-out; animation-fill-mode:forwards; animation-duration: 2s;}
 
@@ -203,8 +203,9 @@ span.ico.new {color:#b6ff00;}
 
 @media screen and (max-width:850px) {
     .info__wrap  ul li br {display:none;}
-    .movement__wrap,
-    .main__visual .sub_tit {display:none;}
+    .main__visual .tit {font-size:42px; line-height:50px}
+    .main__visual .sub_tit {font-size:14px; margin-top:30px}
+    .movement__wrap {bottom:24px;}
 	.port__list li {width:46%; margin:2% 2% 20px 2%;}
 	.port__list {padding: 13px 10px 10px;}
     .skill_list li {width:45%; margin:0 2% 20px 2%;}
@@ -217,7 +218,9 @@ span.ico.new {color:#b6ff00;}
 
 @media screen and (max-width:560px) {
     .main__visual .title_wrap {padding:20px;}
-    .main__visual .tit {font-size:42px; line-height:48px;}
+    .main__visual .tit {font-size:28px; line-height:36px;}
+    .movement__wrap {bottom: 15px;}
+    .movement__wrap div {width:24px; height:38px;}
     .main__visual .sub_tit {display:none;}
 
 	.port__list li {width:96%; margin:2%;}
