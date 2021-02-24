@@ -135,7 +135,7 @@ header .btn_menu.on span:after {margin-top: 0; -webkit-transform: rotate(-45deg)
 #content .description > li em {font-family:"notoSansB";}
 #content .description > li:before {display:inline-block; position:absolute; content:""; width:3px; top:14px; left:0; border-bottom:3px solid #222; border-radius:50%;}
 #content .description > li > ul {margin-left:12px;}
-#content .description > li > ul > li {position:relative; padding-left:10px;}
+#content .description > li > ul > li {position:relative; padding-left:10px; word-break:keep-all;}
 #content .description > li > ul > li:before {display:inline-block; position:absolute; content:""; width:4px; border-bottom:1px solid #222; top:14px; left:0;}
 
 #content .description .progress > span {position:relative; display:inline-block; width:180px; height:30px; border-radius:4px; text-align:center; background:#000;}
