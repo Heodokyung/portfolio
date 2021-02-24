@@ -816,8 +816,8 @@ $(function(){
 						'<a href="#" class="btn_menu"><span></span></a>' +
 					'</nav>' +
 					'<ul class="m_menu">' +
-						'<li class="on"><a href="../../index.html">Portfolio</a></li>' +
-						'<li><a href="../../markup/common_rule.html?params=A">MarkUpGuide</a></li>' +
+						'<li class="on"><a href="https://heodokyung.github.io/portfolio/index.html">Portfolio</a></li>' +
+						'<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md">MarkUpGuide</a></li>' +
 					'</ul>' +
 				'</header>' +
 			'</section>';
@@ -842,7 +842,7 @@ $(function(){
 							'<span class="arrow">&gt;<span class="hidden">현재 활성화 된 메뉴</span></span>' +
 						'</a>' +
 					'</li>' +
-					'<li><a href="../../markup/common_rule.html">Markup Guide</a></li>' +
+					'<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md">Markup Guide</a></li>' +
 				'</ul>' +
 			'</aside>';
 
