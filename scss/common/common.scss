@@ -16,9 +16,9 @@
 
 #wrap {overflow:inherit; height:100%;}
 #wrap.on {overflow:hidden;}
-#wrap.on #header_area {position:relative;}
+#wrap.on #header__area {position:relative;}
 #wrap.on.main .port__list--wrap {padding-top:60px;}
-#header_area {position: fixed; height: 130px; background: #222; width: 100%; top: 0; left: 0; right: 0; z-index: 50;}
+#header__area {position: fixed; height: 130px; background: #222; width: 100%; top: 0; left: 0; right: 0; z-index: 50;}
 
 /* Main */
 #logo {width:55px;}
@@ -46,13 +46,13 @@
 .sub_title:after {display:inline-block; position:absolute; left:0; bottom:0; width:35px; border-bottom:2px solid #222; content:"";}
 
 /* Scroll 시 메인 해더 고정 */
-#header_area.on {height:65px; border-bottom:2px solid #fff;}
-#header_area.on #logo {top:-12px;}
-#header_area.on #logo.txt a {border:none;}
-#header_area.on #mobile {top:17px}
-#header_area.on .m_menu {top:65px;}
-#header_area.on #gnb {top:11px;}
-#header_area.on #gnb > li > a {font-size:20px; line-height:22px; font-weight:bold;}
+#header__area.on {height:65px; border-bottom:2px solid #fff;}
+#header__area.on #logo {top:-12px;}
+#header__area.on #logo.txt a {border:none;}
+#header__area.on #mobile {top:17px}
+#header__area.on .m_menu {top:65px;}
+#header__area.on #gnb {top:11px;}
+#header__area.on #gnb > li > a {font-size:20px; line-height:22px; font-weight:bold;}
 .main__visual.on {margin-top:65px;}
 
 /* Work Portfolio */
@@ -90,32 +90,32 @@ span.ico.new {color:#b6ff00;}
 .container {background:#fff; word-break:keep-all;}
 
 /* Work Skill */
-.skill_list {max-width:1500px; padding:30px 10px; text-align:center; margin: 0 auto; overflow:hidden; opacity:0;}
-.skill_list.on {opacity:1; animation:zoomIn .65s forwards ease-in-out; -webkit-animation:zoomIn .65s forwards ease-in-out;}
-.skill_list li {display:inline-block; position:relative; width:22.5%; height:250px; margin:0 1% 35px 1%; box-sizing:border-box; text-align:center; color:#222; border:2px solid #eee; border-radius:5px; transition: 0.6s; transform-style: preserve-3d;}
-.skill_list li .over {border-radius:5px;}
-.skill_list li .over .tit {position:absolute; top:50%; left:50%; width:60px; height:60px; border-radius:50%; margin:-30px 0 0 -30px; text-align:center; color:#fff; border:2px solid #fff; line-height:60px; font-weight:bold; font-size:16px; z-index:5;}
-.skill_list li.on {transform: rotateY(180deg);}
-.skill_list li .front,
-.skill_list li .back {position: absolute; backface-visibility:hidden; -webkit-backface-visibility:hidden; width:100%; height:100%; box-sizing: border-box;}
-.skill_list li .front {z-index:5; transform: rotateY(0deg);}
-.skill_list li .front:before {display:inline-block; width:64px; height:64px; margin-top:60px; content:""; background-repeat:no-repeat; background-position:50% 50%; background-size:cover;}
-.skill_list li .back {display:flex; align-items: center; transform: rotateY(180deg); padding: 30px; background: #eee; color: #222; font-size: 14px; word-break: keep-all;}
-.skill_list li .front p {position:absolute; top:160px; left:0; right:0; text-align:center; width:100%;}
-/*.skill_list li a {display:block; height:100%;}*/
+.skill__list {max-width:1500px; padding:30px 10px; text-align:center; margin: 0 auto; overflow:hidden; opacity:0;}
+.skill__list.on {opacity:1; animation:zoomIn .65s forwards ease-in-out; -webkit-animation:zoomIn .65s forwards ease-in-out;}
+.skill__list li {display:inline-block; position:relative; width:22.5%; height:250px; margin:0 1% 35px 1%; box-sizing:border-box; text-align:center; color:#222; border:2px solid #eee; border-radius:5px; transition: 0.6s; transform-style: preserve-3d;}
+.skill__list li .over {border-radius:5px;}
+.skill__list li .over .tit {position:absolute; top:50%; left:50%; width:60px; height:60px; border-radius:50%; margin:-30px 0 0 -30px; text-align:center; color:#fff; border:2px solid #fff; line-height:60px; font-weight:bold; font-size:16px; z-index:5;}
+.skill__list li.on {transform: rotateY(180deg);}
+.skill__list li .front,
+.skill__list li .back {position: absolute; backface-visibility:hidden; -webkit-backface-visibility:hidden; width:100%; height:100%; box-sizing: border-box;}
+.skill__list li .front {z-index:5; transform: rotateY(0deg);}
+.skill__list li .front:before {display:inline-block; width:64px; height:64px; margin-top:60px; content:""; background-repeat:no-repeat; background-position:50% 50%; background-size:cover;}
+.skill__list li .back {display:flex; align-items: center; transform: rotateY(180deg); padding: 30px; background: #eee; color: #222; font-size: 14px; word-break: keep-all;}
+.skill__list li .front p {position:absolute; top:160px; left:0; right:0; text-align:center; width:100%;}
+/*.skill__list li a {display:block; height:100%;}*/
 
-.skill_list li:nth-of-type(1) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill_list1.png);}
-.skill_list li:nth-of-type(2) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill_list2.png);}
-.skill_list li:nth-of-type(3) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill_list3.png);}
-.skill_list li:nth-of-type(4) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill_list4.png);}
-.skill_list li:nth-of-type(5) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill_list5.png);}
-.skill_list li:nth-of-type(6) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill_list6.png);}
-.skill_list li:nth-of-type(7) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill_list7.png);}
-.skill_list li:nth-of-type(8) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill_list8.png);}
-.skill_list li:nth-of-type(9) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill_list9.png);}
-.skill_list li:nth-of-type(10) .front::before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill_list10.png);}
-.skill_list li:nth-of-type(11) .front::before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill_list11.png);}
-.skill_list li:nth-of-type(12) .front::before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill_list12.png);}
+.skill__list li:nth-of-type(1) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill__list1.png);}
+.skill__list li:nth-of-type(2) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill__list2.png);}
+.skill__list li:nth-of-type(3) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill__list3.png);}
+.skill__list li:nth-of-type(4) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill__list4.png);}
+.skill__list li:nth-of-type(5) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill__list5.png);}
+.skill__list li:nth-of-type(6) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill__list6.png);}
+.skill__list li:nth-of-type(7) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill__list7.png);}
+.skill__list li:nth-of-type(8) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill__list8.png);}
+.skill__list li:nth-of-type(9) .front:before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill__list9.png);}
+.skill__list li:nth-of-type(10) .front::before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill__list10.png);}
+.skill__list li:nth-of-type(11) .front::before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill__list11.png);}
+.skill__list li:nth-of-type(12) .front::before {background-image:url(https://heodokyung.github.io/portfolio/img/main/ico_skill__list12.png);}
 
 /* Work info */
 .step--list__guide > ul {position:relative;}
@@ -195,7 +195,7 @@ span.ico.new {color:#b6ff00;}
 }
 
 @media only screen and (max-width:960px) {
-    .skill_list li {width:30%; margin:0 1% 15px 1%;}
+    .skill__list li {width:30%; margin:0 1% 15px 1%;}
     .main__visual {height:inherit;}
     .main__visual img {display:block; width:100%; height:auto;}
 }
@@ -207,7 +207,7 @@ span.ico.new {color:#b6ff00;}
     .movement__wrap {bottom:24px;}
 	.port__list li {width:46%; margin:2% 2% 20px 2%;}
 	.port__list {padding: 13px 10px 10px;}
-    .skill_list li {width:45%; margin:0 2% 20px 2%;}
+    .skill__list li {width:45%; margin:0 2% 20px 2%;}
 }
 
 @media screen and (max-width:420px) {
@@ -225,7 +225,7 @@ span.ico.new {color:#b6ff00;}
 	.port__list li {width:96%; margin:2%;}
 	.port__list li .over .tit {font-size:16px;}
 	.port__list li .over .tit span {margin-top:10px; font-size:18px;}
-    .skill_list li {width:100%; margin:0 0 20px 0;}
+    .skill__list li {width:100%; margin:0 0 20px 0;}
     .over {display:block;}
 }
 

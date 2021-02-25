@@ -16,7 +16,7 @@
 		<a href="#content">본문 바로가기</a>
 	</div>
 
-	<section id="header_area" class="wide">
+	<section id="header__area" class="wide">
 		<header>
 			<h1 id="logo" class="main txt"><a href="index.html">HEO.D.K</a></h1>
 			<nav id="web">
@@ -95,7 +95,7 @@
 			<h2 class="title">skill</h2>
 			<lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_WdTEui.json"  background="transparent"  speed="1"  style="width: 100%; height: 400px;"  loop  autoplay></lottie-player>
 
-			<ul class="skill_list">
+			<ul class="skill__list">
 				<li>
 					<div class="front">
 						<p>HTML5/CSS3</p>
@@ -454,21 +454,21 @@ $(function(){
 	{
 		let _num 		= 700;
 		let _menu1 		= $('.port__list--wrap').offset().top - 500,
-			_menu2 		= $('.skill_list').offset().top - 500,
+			_menu2 		= $('.skill__list').offset().top - 500,
 			_menu3 		= $('.work_experience .info__wrap').offset().top - _num,
 			_menu4 		= $('.info__about .info__wrap').offset().top - _num,
 			_scrollTop 	= $(this).scrollTop();
 
 		if (_scrollTop >= _menu1) {$('.port__list').addClass('on');}
-		if (_scrollTop >= _menu2) {$('.skill_list').addClass('on');}
+		if (_scrollTop >= _menu2) {$('.skill__list').addClass('on');}
 		if (_scrollTop >= _menu3) {$('.work_experience .info__wrap').addClass('on');}
 		if (_scrollTop >= _menu4) {$('.info__about .info__wrap').addClass('on');}
 
 		if (_scrollTop > 0 ) {
-			$('#header_area').addClass('on');
+			$('#header__area').addClass('on');
 			$('.main_visual').addClass('on');
 		} else {
-			$('#header_area').removeClass('on');
+			$('#header__area').removeClass('on');
 			$('.main_visual').removeClass('on');
 		}
 	}
@@ -489,18 +489,18 @@ $(function(){
 	// Skill List
 	function skillListCardFlip()
 	{
-		$('.skill_list li').on('click', function(){
+		$('.skill__list li').on('click', function(){
 			let status = $(this).hasClass('on');
 			if (status) { $(this).removeClass('on'); }
 			else { $(this).addClass('on').siblings().removeClass('on'); }
 		});
 
-		$(document).on('mouseenter focusin', '.skill_list li', function() {
+		$(document).on('mouseenter focusin', '.skill__list li', function() {
 			$(this).find('.over').stop().fadeIn(250);
 		});
 
-		$(document).on('mouseleave focusout', '.skill_list li', function() {
-			$('.skill_list li .over').fadeOut(250);
+		$(document).on('mouseleave focusout', '.skill__list li', function() {
+			$('.skill__list li .over').fadeOut(250);
 		});
 	}
 

@@ -639,7 +639,7 @@ $(function(){
 
 
 	// 반응형일때
-	$(this).on('click', '#header_area .btn_menu', function(event) {
+	$(this).on('click', '#header__area .btn_menu', function(event) {
 		event.preventDefault();
 		if( !$(this).hasClass('on') )
 		{
@@ -808,7 +808,7 @@ $(function(){
 				_snb;
 
 			_header =
-			'<section id="header_area">' +
+			'<section id="header__area">' +
 				'<header class="width_fix">' +
 					'<h1 id="logo"><a href="../../index.html"><img src="../../img/logo2.png" alt="limewhale" /></a ></h1>' +
 					'<h2>Portfolio</h2>' +
@@ -856,7 +856,7 @@ $(function(){
 
 	// footer 고정 Resize
 	function footerResize() {
-		var headerH = $("#header_area").outerHeight() + 163,
+		var headerH = $("#header__area").outerHeight() + 163,
 			footerH = $("footer").outerHeight();
 		$("#container").css({ 'min-height' : windowH - ( headerH + footerH ) });
 	}
