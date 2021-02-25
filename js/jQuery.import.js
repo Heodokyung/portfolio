@@ -19,10 +19,12 @@
 
 	var codeview = new Array();
 
+	document.write('<link rel="stylesheet" type="text/css" href="https://heodokyung.github.io/portfolio/css/ui_common.css?date'+ fulldate +'" />');
+	document.write('<link rel="stylesheet" type="text/css" href="https://heodokyung.github.io/portfolio/css/ui_style.css?date'+ fulldate +'" />');
 	codeview.push({'url':'https://heodokyung.github.io/portfolio/js/jquery-2.2.4.min.js', 'cashbuster':false});
 	codeview.push({'url':'https://heodokyung.github.io/portfolio/js/jquery.event.drag-1.5.1.min.js', 'cashbuster':false});
 	codeview.push({'url':'https://heodokyung.github.io/portfolio/js/ui.js?date'+ fulldate +'', 'cashbuster':false});
-	// codeview.push({'url':'https://heodokyung.github.io/portfolio/js/jquery.touchSlider.js', 'cashbuster':false});
+	// codeview.push({'url':'../../js/jquery.touchSlider.js', 'cashbuster':false});
 
 	for(var i = 0, total = codeview.length; i < total; i++){
 		document.write('<script src="' +codeview[i].url + ((codeview[i].cashbuster) ?'?cb='+window._CACHE_BUSTER:'')+'" charset="utf-8"></'+'script>');
