@@ -22,7 +22,7 @@
 .slide_guide.on + #slide_wrap {margin-top:5px;}
 .slide_guide {display:none; position:relative; margin:30px 0 15px;}
 .slide_guide.on {display:block;}
-.slide_guide .ico_guide {display:inline-block; width:30px; height:32px; text-indent:100%; white-space:nowrap; overflow:hidden; background:url(../img/scroll_guide.png) no-repeat 0 0; vertical-align:middle;}
+.slide_guide .ico_guide {display:inline-block; width:30px; height:32px; text-indent:100%; white-space:nowrap; overflow:hidden; background:url(https://heodokyung.github.io/portfolio/img/scroll_guide.png) no-repeat 0 0; vertical-align:middle;}
 .slide_guide .slide_count {display:inline-block; margin-left:10px; font-size:14px; vertical-align:middle;  font-family:"notoSansB";}
 .slide_guide .slide_count .page_num {color:#000;}
 .slide_guide .slide_count .page_total {color:#888;}
@@ -46,14 +46,14 @@
 .paging {position:absolute; bottom:0; left:0; right:0; height:36px; text-align:center; background:#000; z-index:100;}
 .paging button {display:inline-block; width:24px; height:24px; vertical-align:middle;}
 .paging button ~ button {margin-left:7px;}
-.paging button span {display:block; width:12px; height:24px; font-size:0; background-repeat:no-repeat; background-image:url(../img/img_pagination.png);}
+.paging button span {display:block; width:12px; height:24px; font-size:0; background-repeat:no-repeat; background-image:url(https://heodokyung.github.io/portfolio/img/img_pagination.png);}
 .paging .bg_l {background-position:0 -50px;}
 .paging .bg_r {margin-left:12px; background-position:100% -50px;}
 .paging button.on .bg_l {background-position:0 0;}
 .paging button.on .bg_r {background-position:100% 0;}
 
 
-#slide_wrap .btn_control .btn {display:block; position:absolute; top:50%; width:54px; height:70px; margin-top:-35px; background-repeat:no-repeat; background-image:url(../img/btn_ctrl.png);}
+#slide_wrap .btn_control .btn {display:block; position:absolute; top:50%; width:54px; height:70px; margin-top:-35px; background-repeat:no-repeat; background-image:url(https://heodokyung.github.io/portfolio/img/btn_ctrl.png);}
 #slide_wrap .btn_control .btn.prev {left:0; background-position:0 0; border-radius:5px 0 5px 5px;}
 #slide_wrap .btn_control .btn.next {right:0; background-position:100% 0; border-radius:0 5px 5px 5px;}
 
@@ -66,7 +66,7 @@
 .m_description .info .tit {position:relative; margin-top:50px; font-size:26px; text-align:center; color:#222; font-family:"notoSansB";}
 .m_description .info .tit:before {position:absolute; top:50%; right:0; content:""; width:1px; height:40px; border-right:1px solid #222;}
 .m_description .info .tit span {color:#666;}
-.m_port_area {width:431px; height:857px; margin:50px 0 30px 70px; background:url(../img/bg_phone.png) no-repeat;}
+.m_port_area {width:431px; height:857px; margin:50px 0 30px 70px; background:url(https://heodokyung.github.io/portfolio/img/bg_phone.png) no-repeat;}
 
 /* app */
 .m_port_area.app {background:0;}
@@ -85,10 +85,10 @@
 .btn_app_wrap {margin:7px 0 30px;}
 .btn_google, .btn_apple {display:inline-block; width:200px; height:48px; border-radius:4px; line-height:49px;
 	color:#fff; border:solid 1px rgba(255, 255, 255, 0.9); border:solid 1px rgba(255, 255, 255, 0.9);}
-.btn_google {font-size:0px; line-height:60px; background:rgba(0, 0, 0, 0.9) url(../img/logo_googleplay.png) no-repeat 50% 50%; background-size:110px;}
+.btn_google {font-size:0px; line-height:60px; background:rgba(0, 0, 0, 0.9) url(https://heodokyung.github.io/portfolio/img/logo_googleplay.png) no-repeat 50% 50%; background-size:110px;}
 .btn_google span, .btn_apple span {display:inline-block; height:100%; padding:0 0 0 25px; color:#fff;}
 .btn_apple {font-size:15px; background:rgba(0, 0, 0, 0.9); text-align:center;}
-.btn_apple span {background:url(../img/ico_apple.png) no-repeat 0 50%; background-size:19px; letter-spacing:0;}
+.btn_apple span {background:url(https://heodokyung.github.io/portfolio/img/ico_apple.png) no-repeat 0 50%; background-size:19px; letter-spacing:0;}
 
 
 /*********************
@@ -111,7 +111,7 @@
 .board.col {margin-top:20px;}
 .board.col th, .board.col td {text-align:center;}
 .board.col table {border-top:2px solid #000; border-bottom:2px solid #5d5d5d;}
-.board.col thead th {padding:11px 0; border-bottom:1px solid #7f7f7f; height:22px; color:#fff; font-size:18px; line-height:22px; font-family:"notoSansB"; font-family:"Century Gothic"; background:#5d5d5d url(../img/bg_board_th.gif) no-repeat 0 center;}
+.board.col thead th {padding:11px 0; border-bottom:1px solid #7f7f7f; height:22px; color:#fff; font-size:18px; line-height:22px; font-family:"notoSansB"; font-family:"Century Gothic"; background:#5d5d5d url(https://heodokyung.github.io/portfolio/img/bg_board_th.gif) no-repeat 0 center;}
 .board.col thead th:first-child {background-image:none;}
 .board.col tbody th, .board.col tbody td, .board.col tfoot th, .board.col tfoot td {padding:7px 0; height:26px; line-height:18px; border-top:1px solid #e5e5e5;}
 .board.col tbody th {background:#f6f6f6;}
@@ -139,17 +139,17 @@
 .layer_pop .pop_content > ul > li > ul {margin-bottom:20px;}
 .layer_pop .pop_content > ul > li dl {color:#ddd; margin:0  25px 20px 25px;}
 .layer_pop .pop_content > ul > li dl ~ dl {margin-top:10px;}
-.layer_pop .pop_content > ul > li dt {padding-left:9px; font-size:18px; background:url(../img/ico_2depthon.gif) no-repeat 0 13px;}
+.layer_pop .pop_content > ul > li dt {padding-left:9px; font-size:18px; background:url(https://heodokyung.github.io/portfolio/img/ico_2depthon.gif) no-repeat 0 13px;}
 .layer_pop .pop_content > ul > li dt span {font-size:12px; color:#ccc;}
-.layer_pop .pop_content > ul > li dd {padding-left:11px; margin-top:5px; font-size:13px; line-height:19px; background:url(../img/ico_point.gif) no-repeat 0 7px;}
+.layer_pop .pop_content > ul > li dd {padding-left:11px; margin-top:5px; font-size:13px; line-height:19px; background:url(https://heodokyung.github.io/portfolio/img/ico_point.gif) no-repeat 0 7px;}
 .layer_pop .pop_content .btn_cancel {text-decoration:underline;}
-.layer_pop .btn_close {display:inline-block; position:absolute; top:37px; right:10px; width:50px; height:50px; text-indent:100%; white-space:nowrap; overflow:hidden; cursor:pointer; background:url(../img/btn_close.png) no-repeat 50% 50%;}
+.layer_pop .btn_close {display:inline-block; position:absolute; top:37px; right:10px; width:50px; height:50px; text-indent:100%; white-space:nowrap; overflow:hidden; cursor:pointer; background:url(https://heodokyung.github.io/portfolio/img/btn_close.png) no-repeat 50% 50%;}
 .layer_pop .btn_wrap {text-align:center;}
 .layer_pop .btn_close.block {position:initial; color:#fff; border:1px solid #fff;}
 
 .mask {position:fixed; left:0; top:0; bottom:0; right:0; z-index:900; background:#000; text-indent:-999em;}
-#touchSlider .guide_mask {position:absolute; left:0; top:0; bottom:0; right:0; z-index:900; text-indent:-999em; background:#000 url(../img/ico_guide_swipe.png) no-repeat 50% 50%; background-size:100px auto;}
-.mask.loading {background:#000 url(../img/loading.gif) no-repeat 50% 50%;}
+#touchSlider .guide_mask {position:absolute; left:0; top:0; bottom:0; right:0; z-index:900; text-indent:-999em; background:#000 url(https://heodokyung.github.io/portfolio/img/ico_guide_swipe.png) no-repeat 50% 50%; background-size:100px auto;}
+.mask.loading {background:#000 url(https://heodokyung.github.io/portfolio/img/loading.gif) no-repeat 50% 50%;}
 
 
 /**************************
