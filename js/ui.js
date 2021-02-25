@@ -854,7 +854,10 @@ $(function(){
 	}
 	commonLayoutGrid();
 
-	// footer 고정 Resize
+	/******************************************************************************************
+	* Name : footerResize()
+	* Decrition : 하단 Footer가 항상 페이지의 컨텐츠 길이에 상관 없이 하단에 고정되게 처리
+	********************************************************************************************/
 	function footerResize() {
 		var headerH = $("#header__area").outerHeight() + 163,
 			footerH = $("footer").outerHeight();
@@ -862,5 +865,28 @@ $(function(){
 	}
 	footerResize();
 });
+
+/******************************************************************************************
+* Name : makeDateTime
+* Decrition : CSS및 js 캐쉬 방지를 위한 function
+********************************************************************************************/
+function makeDateTime(){
+	var date 		= new Date();
+	year  		= String( date.getFullYear() ),
+	month 		= String( date.getMonth() + 1 ),
+	day   		= String( date.getDate() ),
+	hour 		= String( date.getHours() ),
+	min 		= String( date.getMinutes() ),
+	sec 		= String( date.getSeconds() );
+
+	if (month < 10) { month = '0' + month; }
+	if (day < 10) { day = '0' + day; }
+	if (hour < 10) { hour = '0' + hour; }
+	if (min < 10) { min = '0' + min; }
+	if (sec < 10) { sec = '0' + sec; }
+
+	var fulldate 	= year + month + day + '_' + hour + min + sec;
+	console.log(fulldate)
+}
 
 

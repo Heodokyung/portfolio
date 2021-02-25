@@ -83,7 +83,7 @@ span.ico.new {color:#b6ff00;}
     animation:slideInDown .85s forwards ease-in-out; -webkit-animation:slideInDown .85s forwards ease-in-out;}
 .main__visual .tit span {text-stroke: 1px #fff; -webkit-text-stroke: 1px rgba(255, 255, 255, 0.774); color:transparent; background-clip: text; -webkit-background-clip: text;
     -moz-background-clip: text;}
-.main__visual .sub_tit {margin-top:40px; font-size:18px; line-height:24px; color:#fff; word-break:keep-all; animation:fadeInLeft 1.2s ease-in-out; -webkit-animation:fadeInLeft 1.2s ease-in-out;}
+.main__visual .sub_tit {margin-top:40px; font-size:18px; line-height:24px; color:#fff; word-break:keep-all; /* animation:fadeInLeft 1.2s ease-in-out; -webkit-animation:fadeInLeft 1.2s ease-in-out; */}
 
 .main__visual img {display:none;}
 .container {background:#fff; word-break:keep-all;}
@@ -164,6 +164,14 @@ span.ico.new {color:#b6ff00;}
     100%{top:80%;}
 }
 
+/* 타이핑 */
+.typing--txt{display: none;}
+.typing ul li.on {display: inline-block; animation-name: cursor; animation-duration: 0.2s; animation-iteration-count: infinite;}
+@keyframes cursor {
+     0%{border-right: 1px solid #fff}
+     50%{border-right: 1px solid #000}
+     100%{border-right: 1px solid #fff}
+}
 /*******************************
     02. MEDIA QUARY CSS
 ********************************/
