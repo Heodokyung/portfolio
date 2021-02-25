@@ -14,15 +14,18 @@
 		if (min < 10) { min = '0' + min; }
 		if (sec < 10) { sec = '0' + sec; }
 
-		var fulldate 	= year + month + day + '_' + hour + min + sec;
+	var fulldate 	= year + month + day + '_' + hour + min + sec;
+
 
 	var codeview = new Array();
 
+	/*
 	document.write('<link rel="stylesheet" type="text/css" href="../../css/default.css?date'+ fulldate +'" />');
-	document.write('<link rel="stylesheet" type="text/css" href="../../css/cm.style.css?date'+ fulldate +'" />');
-	codeview.push({'url':'../../js/jquery-2.2.4.min.js', 'cashbuster':false});
-	codeview.push({'url':'../../js/jquery.event.drag-1.5.1.min.js', 'cashbuster':false});
-	codeview.push({'url':'../../js/ui.js?date'+ fulldate +'', 'cashbuster':false});
+	document.write('');
+	*/
+	codeview.push({'url':'https://heodokyung.github.io/portfolio/js/jquery-2.2.4.min.js', 'cashbuster':false});
+	codeview.push({'url':'https://heodokyung.github.io/portfolio/js/jquery.event.drag-1.5.1.min.js', 'cashbuster':false});
+	codeview.push({'url':'https://heodokyung.github.io/portfolio/js/ui.js?date'+ fulldate +'', 'cashbuster':false});
 	// codeview.push({'url':'../../js/jquery.touchSlider.js', 'cashbuster':false});
 
 	for(var i = 0, total = codeview.length; i < total; i++){
