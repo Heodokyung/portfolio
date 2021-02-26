@@ -425,8 +425,8 @@ $(function(){
 	// Common UI
 	let windowH 	= $(window).height(),
 		documentH 	= $(document).height(),
-		easing	 	= 'swing',
-		targetPos	= undefined;
+		easing	 	= 'swing';
+
 
 	// 스크롤 시 메뉴 페이드
 	$(window).scroll(function(event){
@@ -446,21 +446,20 @@ $(function(){
 		}),
 		$(document).on('click', '.port__list li a', function(event) {
 			event.preventDefault();
-			targetPos = $(this).offset().top;
-			const link =  $(this).attr('href');
-			location.href = link + '?'+ targetPos +'';
+			let targetPos 	= Math.floor( $(this).offset().top ) - 300;
+			let targetLink 	=  $(this).attr('href');
+			location.href 	= targetLink + '?'+ targetPos +'';
 		});
 	}
 
 	// 상세 화면 본 후 다시 스크롤 이동처리
 	function initScroll() {
-		targetPos = Math.floor(window.location.href.split('?')[1]) - 300;
-		if (targetPos != null || targetPos != undefined) {
+		let movePos = window.location.href.split('?')[1];
+		if (movePos != null || movePos != undefined) {
 			setTimeout(function(){
-	 			$('html, body').animate({scrollTop : targetPos}, 10);
+	 			$('html, body').animate({scrollTop : movePos}, 10);
 			},10);
 		}
-		targetPos = undefined;
 	}
 	initScroll();
 
