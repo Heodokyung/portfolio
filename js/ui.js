@@ -864,29 +864,12 @@ $(function(){
 		$("#container").css({ 'min-height' : windowH - ( headerH + footerH ) });
 	}
 	footerResize();
+
+	$('.btn_port_list').on('click', function(event){
+		event.preventDefault();
+		// let offsetVal = window.location.href.split('?');
+		console.log(offsetVal)
+	});
 });
-
-/******************************************************************************************
-* Name : makeDateTime
-* Decrition : CSS및 js 캐쉬 방지를 위한 function
-********************************************************************************************/
-function makeDateTime(){
-	var date 		= new Date();
-	year  		= String( date.getFullYear() ),
-	month 		= String( date.getMonth() + 1 ),
-	day   		= String( date.getDate() ),
-	hour 		= String( date.getHours() ),
-	min 		= String( date.getMinutes() ),
-	sec 		= String( date.getSeconds() );
-
-	if (month < 10) { month = '0' + month; }
-	if (day < 10) { day = '0' + day; }
-	if (hour < 10) { hour = '0' + hour; }
-	if (min < 10) { min = '0' + min; }
-	if (sec < 10) { sec = '0' + sec; }
-
-	var fulldate 	= year + month + day + '_' + hour + min + sec;
-	console.log(fulldate)
-}
 
 
