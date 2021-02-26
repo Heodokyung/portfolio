@@ -810,7 +810,7 @@ $(function(){
 			_header =
 			'<section id="header__area">' +
 				'<header class="width_fix">' +
-					'<h1 id="logo"><a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index"><img src="../../img/logo2.png" alt="limewhale" /></a ></h1>' +
+					'<h1 id="logo"><a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index"><img src="https://heodokyung.github.io/portfolio/img/logo2.png" alt="limewhale" /></a></h1>' +
 					'<h2>Portfolio</h2>' +
 					'<nav id="mobile">' +
 						'<a href="#" class="btn_menu"><span></span></a>' +
@@ -827,24 +827,25 @@ $(function(){
 				'<div class="footer_area width_fix">' +
 					'<p class="footer_logo"><img src="https://heodokyung.github.io/portfolio/img/footer_whale.png" alt="whale tail" /></p>' +
 					'<div class="copyright">' +
-						'<p>Copyright © limewhale.com All rights reserved.</p>' +
+						'<p>Copyright © HEO.D.K All rights reserved.</p>' +
 						'<address><a href="mailto:limewhale@daum.net">limewhale@daum.net</a></address>' +
 					'</div>' +
 				'</div>' +
 				'<button type="button" class="scrollup"><span>Scroll Top</span></button>'+
 			'</footer>';
 
-			_snb =
-			'<aside id="sidebar">' +
-				'<ul id="snb">' +
-					'<li class="on">' +
-						'<a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index">Portfolio' +
-							'<span class="arrow">&gt;<span class="hidden">현재 활성화 된 메뉴</span></span>' +
-						'</a>' +
-					'</li>' +
-					'<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md">Markup Guide</a></li>' +
-				'</ul>' +
-			'</aside>';
+			_snb ='\
+			<aside id="sidebar">\
+				<ul id="snb">\
+					<li class="on">\
+						<a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index">Portfolio\
+							<span class="arrow">&gt;<span class="hidden">현재 활성화 된 메뉴</span></span>\
+						</a>\
+					</li>\
+					<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md">Markup Guide</a></li>\
+				</ul>\
+			</aside>\
+			'
 
 			$('#wrap').prepend( _header );
 			$('#wrap').append( _footer );
