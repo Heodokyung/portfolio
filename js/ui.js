@@ -825,7 +825,7 @@ $(function(){
 			_footer =
 			'<footer>' +
 				'<div class="footer_area width_fix">' +
-					'<p class="footer_logo"><img src="../../img/footer_whale.png" alt="whale tail" /></p>' +
+					'<p class="footer_logo"><img src="https://heodokyung.github.io/portfolio/img/footer_whale.png" alt="whale tail" /></p>' +
 					'<div class="copyright">' +
 						'<p>Copyright © limewhale.com All rights reserved.</p>' +
 						'<address><a href="mailto:limewhale@daum.net">limewhale@daum.net</a></address>' +
@@ -850,20 +850,9 @@ $(function(){
 			$('#wrap').append( _footer );
 			$('#wrap #container .tit_bar').after( _snb );
 		}
-		footerResize();
 	}
 	commonLayoutGrid();
 
-	/******************************************************************************************
-	* Name : footerResize()
-	* Decrition : 하단 Footer가 항상 페이지의 컨텐츠 길이에 상관 없이 하단에 고정되게 처리
-	********************************************************************************************/
-	function footerResize() {
-		var headerH = $("#header__area").outerHeight() + 163,
-			footerH = $("footer").outerHeight();
-		$("#container").css({ 'min-height' : windowH - ( headerH + footerH ) });
-	}
-	footerResize();
 	$('.btn--index').on('click', function(event){
 		event.preventDefault();
 		let offsetVal = window.location.href.split('?')[1];

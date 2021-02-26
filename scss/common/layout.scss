@@ -156,7 +156,7 @@ header .btn_menu.on span:after {margin-top: 0; -webkit-transform: rotate(-45deg)
 /*******************************
     04. FOOTER LAYOUT CSS
 ********************************/
-footer {height:130px; background:#222; color:#fff; border-top:1px solid #333;}
+footer {height:130px; background:#222; color:#fff; border-top:1px solid #333; box-sizing:border-box;}
 footer .width_fix {margin-top:30px; padding:0 15px; overflow:hidden;}
 #wrap.main footer .footer_area {padding:25px 15px;}
 .footer_logo {float:left;}
