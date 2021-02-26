@@ -838,7 +838,7 @@ $(function(){
 			'<aside id="sidebar">' +
 				'<ul id="snb">' +
 					'<li class="on">' +
-						'<a href="../../index.html">Portfolio' +
+						'<a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index">Portfolio' +
 							'<span class="arrow">&gt;<span class="hidden">현재 활성화 된 메뉴</span></span>' +
 						'</a>' +
 					'</li>' +
