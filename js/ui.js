@@ -590,7 +590,6 @@ $(function(){
 	// resize function
 	function resizeFunc() {
 		$('.mask').css({ width : windowW, height : documentH , opacity : .7 });
-		footerResize();
 	}
 
 	/****************************************************
@@ -851,7 +850,7 @@ $(function(){
 			$('#wrap').append( _footer );
 			$('#wrap #container .tit_bar').after( _snb );
 		}
-		footerResize();
+		// footerResize();
 	}
 	commonLayoutGrid();
 
@@ -864,7 +863,6 @@ $(function(){
 			footerH = $("footer").outerHeight();
 		$("#container").css({ 'min-height' : windowH - ( headerH + footerH ) });
 	}
-	footerResize();
 
 	$('.btn--index').on('click', function(event){
 		event.preventDefault();
