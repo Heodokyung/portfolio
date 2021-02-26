@@ -457,8 +457,8 @@ $(function(){
 		let offsetVal = window.location.href.split('?')[1];
 		if (offsetVal != null || offsetVal != undefined) {
 			setTimeout(function(){
-	 			$('html, body').animate({scrollTop : offsetVal - 200}, 600)
-			},100);
+	 			$('html, body').animate({scrollTop : offsetVal - 200}, 10)
+			},10);
 		}
 	}
 	initScroll();
