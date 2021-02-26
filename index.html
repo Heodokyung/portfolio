@@ -454,12 +454,13 @@ $(function(){
 
 	// 상세 화면 본 후 다시 스크롤 이동처리
 	function initScroll() {
-		let offsetVal = Math.floor(window.location.href.split('?')[1]) - 300;
-		if (offsetVal != null || offsetVal != undefined) {
+		targetPos = Math.floor(window.location.href.split('?')[1]) - 300;
+		if (targetPos != null || targetPos != undefined) {
 			setTimeout(function(){
-	 			$('html, body').animate({scrollTop : offsetVal}, 10)
+	 			$('html, body').animate({scrollTop : targetPos}, 10);
 			},10);
 		}
+		targetPos = undefined;
 	}
 	initScroll();
 
