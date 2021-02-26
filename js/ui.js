@@ -807,32 +807,34 @@ $(function(){
 				_footer,
 				_snb;
 
-			_header =
-			'<section id="header__area">' +
-				'<header class="width_fix">' +
-					'<h1 id="logo"><a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index"><img src="https://heodokyung.github.io/portfolio/img/logo2.png" alt="limewhale" /></a></h1>' +
-					'<h2>Portfolio</h2>' +
-					'<nav id="mobile">' +
-						'<a href="#" class="btn_menu"><span></span></a>' +
-					'</nav>' +
-					'<ul class="m_menu">' +
-						'<li class="on"><a href="https://heodokyung.github.io/portfolio/index.html">Portfolio</a></li>' +
-						'<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md">MarkUpGuide</a></li>' +
-					'</ul>' +
-				'</header>' +
-			'</section>';
+			_header ='\
+			<section id="header__area">\
+				<header class="width_fix">\
+					<h1 id="logo"><a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index"><img src="https://heodokyung.github.io/portfolio/img/logo2.png" alt="limewhale" /></a></h1>\
+					<h2>Portfolio</h2>\
+					<nav id="mobile">\
+						<a href="#" class="btn_menu"><span></span><a>\
+					</nav>\
+					<ul class="m_menu">\
+						<li class="on"><a href="https://heodokyung.github.io/portfolio/index.html">Portfolio</a></li>\
+						<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md">MarkUpGuide</a></li>\
+					</ul>\
+				</header>\
+			</section>\
+			';
 
-			_footer =
-			'<footer>' +
-				'<div class="footer_area width_fix">' +
-					'<p class="footer_logo"><img src="https://heodokyung.github.io/portfolio/img/footer_whale.png" alt="whale tail" /></p>' +
-					'<div class="copyright">' +
-						'<p>Copyright © HEO.D.K All rights reserved.</p>' +
-						'<address><a href="mailto:limewhale@daum.net">limewhale@daum.net</a></address>' +
-					'</div>' +
-				'</div>' +
-				'<button type="button" class="scrollup"><span>Scroll Top</span></button>'+
-			'</footer>';
+			_footer ='\
+			<footer>\
+				<div class="footer_area width_fix">\
+					<p class="footer_logo"><img src="https://heodokyung.github.io/portfolio/img/footer_whale.png" alt="whale tail" /></p>\
+					<div class="copyright">\
+						<p>Copyright © HEO.D.K All rights reserved.</p>\
+						<address><a href="mailto:limewhale@daum.net">limewhale@daum.net</a></address>\
+					</div>\
+				</div>\
+				<button type="button" class="scrollup"><span>Scroll Top</span></button>\
+			</footer>\
+			';
 
 			_snb ='\
 			<aside id="sidebar">\
@@ -845,7 +847,7 @@ $(function(){
 					<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md">Markup Guide</a></li>\
 				</ul>\
 			</aside>\
-			'
+			';
 
 			$('#wrap').prepend( _header );
 			$('#wrap').append( _footer );
