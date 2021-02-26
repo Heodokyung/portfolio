@@ -16,8 +16,6 @@
 
 #wrap {overflow:inherit; height:100%;}
 #wrap:after {display:block; height:130px; content:""; position: relative; width: 100%; z-index: -1; bottom: 0;}
-#wrap.main:after {display:none;}
-#wrap.main footer {position:relative; bottom:initial;}
 #wrap.on {overflow:hidden;}
 #wrap.on #header__area {position:relative;}
 #wrap.on.main .port__list--wrap {padding-top:60px;}

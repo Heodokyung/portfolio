@@ -590,6 +590,7 @@ $(function(){
 	// resize function
 	function resizeFunc() {
 		$('.mask').css({ width : windowW, height : documentH , opacity : .7 });
+		footerResize();
 	}
 
 	/****************************************************
@@ -850,8 +851,20 @@ $(function(){
 			$('#wrap').append( _footer );
 			$('#wrap #container .tit_bar').after( _snb );
 		}
+		footerResize();
 	}
 	commonLayoutGrid();
+
+	/******************************************************************************************
+	* Name : footerResize()
+	* Decrition : 하단 Footer가 항상 페이지의 컨텐츠 길이에 상관 없이 하단에 고정되게 처리
+	********************************************************************************************/
+	function footerResize() {
+		var headerH = $("#header__area").outerHeight() + 163,
+			footerH = $("footer").outerHeight();
+		$("#container").css({ 'min-height' : windowH - ( headerH + footerH ) });
+	}
+	footerResize();
 
 	$('.btn--index').on('click', function(event){
 		event.preventDefault();
