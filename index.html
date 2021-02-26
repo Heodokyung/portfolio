@@ -452,6 +452,17 @@ $(function(){
 		});
 	}
 
+	// 상세 화면 본 후 다시 스크롤 이동처리
+	function initScroll() {
+		let offsetVal = window.location.href.split('?')[1];
+		if (offsetVal != null || offsetVal != undefined) {
+			setTimeout(function(){
+	 			$('html, body').animate({scrollTop : offsetVal - 200}, 600)
+			},100);
+		}
+	}
+	initScroll();
+
 	// layer Close
 	$(document).on('click', '.layer_pop .btn_close, .layer_pop .btn_cancel', function () {
 		$('#wrap').css({height : documentH}).removeClass('on');

@@ -810,7 +810,7 @@ $(function(){
 			_header =
 			'<section id="header__area">' +
 				'<header class="width_fix">' +
-					'<h1 id="logo"><a href="../../index.html"><img src="../../img/logo2.png" alt="limewhale" /></a ></h1>' +
+					'<h1 id="logo"><a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index"><img src="../../img/logo2.png" alt="limewhale" /></a ></h1>' +
 					'<h2>Portfolio</h2>' +
 					'<nav id="mobile">' +
 						'<a href="#" class="btn_menu"><span></span></a>' +
@@ -864,11 +864,10 @@ $(function(){
 		$("#container").css({ 'min-height' : windowH - ( headerH + footerH ) });
 	}
 	footerResize();
-
-	$('.btn_port_list').on('click', function(event){
+	$('.btn--index').on('click', function(event){
 		event.preventDefault();
-		// let offsetVal = window.location.href.split('?');
-		console.log(offsetVal)
+		let offsetVal = window.location.href.split('?')[1];
+		location.href = 'https://heodokyung.github.io/portfolio/index.html?'+offsetVal+'';
 	});
 });
 
