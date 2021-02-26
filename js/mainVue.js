@@ -38,7 +38,6 @@ Vue.component('portfolio-items', {
 	'
 });
 
-
 const app = new Vue({
 	el: '#wrap',
 	data: {
