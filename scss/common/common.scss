@@ -39,7 +39,7 @@
 .search_result {}
 .search_result .tit {margin:-20px 0 10px 15px;}
 
-.title, .sub_title {text-transform: uppercase; margin: 20px 30px 0; font-size: 42px; color:#222; font-family:"NotoSansB";}
+.title, .sub_title {/* text-transform: uppercase; */ margin: 20px 30px 0; font-size: 42px; color:#222; font-family:"NotoSansB";}
 .title {position:relative; padding-bottom:6px;}
 .title:after {position:absolute; border-bottom: 3px solid #222; bottom:0; left:0; right:0; content:"";}
 

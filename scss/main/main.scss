@@ -45,7 +45,7 @@
 
 /* Scroll 시 메인 해더 고정 */
 #header__area.on {height:65px; border-bottom:2px solid #fff;}
-#header__area.on #logo {top:-12px;}
+#header__area.on #logo {top:-12px; left:20px;}
 #header__area.on #logo.txt a {border:none;}
 #header__area.on #mobile {top:17px}
 #header__area.on .m_menu {top:65px;}
