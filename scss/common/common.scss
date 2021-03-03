@@ -16,9 +16,7 @@
 
 #wrap {overflow:inherit; height:100%;}
 #wrap.on {overflow:hidden;}
-#wrap.on #header__area {position:relative;}
 #wrap.on.main .port__list--wrap {padding-top:60px;}
-#header__area {position: fixed; height: 130px; background: #222; width: 100%; top: 0; left: 0; right: 0; z-index: 50;}
 
 /* Main */
 #logo {width:55px;}
@@ -41,20 +39,13 @@
 .search_result {}
 .search_result .tit {margin:-20px 0 10px 15px;}
 
-.title, .sub_title {text-transform: uppercase; margin: 20px 30px 0; font-size: 42px; border-bottom: 3px solid #222; color:#222; font-family:"NotoSansB";}
+.title, .sub_title {text-transform: uppercase; margin: 20px 30px 0; font-size: 42px; color:#222; font-family:"NotoSansB";}
+.title {position:relative; padding-bottom:6px;}
+.title:after {position:absolute; border-bottom: 3px solid #222; bottom:0; left:0; right:0; content:"";}
+
 #content .desc_area .title {margin:20px 0 0;}
 .sub_title {position:relative; border-bottom:0; margin:0 0 10px 0; padding-bottom:7px; font-size:24px;}
 .sub_title:after {display:inline-block; position:absolute; left:0; bottom:0; width:35px; border-bottom:2px solid #222; content:"";}
-
-/* Scroll 시 메인 해더 고정 */
-#header__area.on {height:65px; border-bottom:2px solid #fff;}
-#header__area.on #logo {top:-12px;}
-#header__area.on #logo.txt a {border:none;}
-#header__area.on #mobile {top:17px}
-#header__area.on .m_menu {top:65px;}
-#header__area.on #gnb {top:11px;}
-#header__area.on #gnb > li > a {font-size:20px; line-height:22px; font-weight:bold;}
-.main__visual.on {margin-top:65px;}
 
 /* Work Portfolio */
 .port__list--wrap {background:#fff;}

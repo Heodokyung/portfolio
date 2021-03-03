@@ -14,10 +14,7 @@
 
 #wrap {overflow:inherit; height:100%;}
 #wrap.on {overflow:hidden;}
-#wrap.on #header__area {position:relative;}
 #wrap.on.main .port__list--wrap {padding-top:60px;}
-
-#header__area {position: fixed; height: 130px; background: #222; width: 100%; top: 0; left: 0; right: 0; z-index: 50;}
 
 /* Main */
 #logo {width:55px;}

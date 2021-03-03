@@ -810,14 +810,14 @@ $(function(){
 			_header ='\
 			<section id="header__area">\
 				<header class="width_fix">\
-					<h1 id="logo"><a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index"><img src="https://heodokyung.github.io/portfolio/img/logo2.png" alt="limewhale" /></a></h1>\
+					<h1 id="logo" class="main txt"><a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index">HEO.D.K</a></h1>\
 					<h2>Portfolio</h2>\
 					<nav id="mobile">\
 						<a href="#" class="btn_menu"><span></span><a>\
 					</nav>\
 					<ul class="m_menu">\
 						<li class="on"><a href="https://heodokyung.github.io/portfolio/index.html">Portfolio</a></li>\
-						<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md">MarkUpGuide</a></li>\
+						<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md" traget="_blank">MarkUpGuide</a></li>\
 					</ul>\
 				</header>\
 			</section>\
@@ -844,7 +844,7 @@ $(function(){
 							<span class="arrow">&gt;<span class="hidden">현재 활성화 된 메뉴</span></span>\
 						</a>\
 					</li>\
-					<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md">Markup Guide</a></li>\
+					<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md" traget="_blank">Markup Guide</a></li>\
 				</ul>\
 			</aside>\
 			';
