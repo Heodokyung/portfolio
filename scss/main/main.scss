@@ -15,13 +15,15 @@
 #wrap {overflow:inherit; height:100%;}
 #wrap.on {overflow:hidden;}
 #wrap.on.main .port__list--wrap {padding-top:60px;}
+#header__area.wide #logo {top:18px; left:30px;}
+#header__area.wide #logo a {width:95px !important;}
 
 /* Main */
 #logo {width:55px;}
 #wrapper {position:relative;}
 #scroller {width:100%;}
 #scroller.scroll {position:relative; overflow-x:scroll;}
-
+#header__area.wide #gnb {top:30px; right:30px;}
 #wrapper .guide.scroll {display:inline-block;}
 .sort__wrap {position:relative; padding:8px 30px; background:#172336; z-index:10; color:#fff; font-family:"notoSansB";}
 .sort__wrap label {position:absolute; top:20px;}
@@ -75,7 +77,7 @@ span.ico ~ .ico {margin-left:3px;}
 span.ico.new {color:#b6ff00;}
 
 .main__visual {position:relative; margin-top:130px; height:810px; background:url(https://heodokyung.github.io/portfolio/img/main/bg_main_visual.jpg) no-repeat 50% 50%; background-size:cover; background-attachment:fixed;}
-.main__visual .title_wrap {position:absolute; left:0; right:0; top:0; bottom:0; background:rgba(0, 0, 0, 0.4); z-index:5; padding:40px;}
+.main__visual .title_wrap {position:absolute; left:0; right:0; top:0; bottom:0; background:rgba(0, 0, 0, 0.4); z-index:5; padding:40px 30px;}
 .main__visual .tit {font-size:72px; line-height:84px; color:#fff; font-family:"notoSansB";
     animation:slideInDown .85s forwards ease-in-out; -webkit-animation:slideInDown .85s forwards ease-in-out;}
 .main__visual .tit span {text-stroke: 1px #fff; -webkit-text-stroke: 1px rgba(255, 255, 255, 0.774); color:transparent; background-clip: text; -webkit-background-clip: text;
@@ -215,6 +217,8 @@ span.ico.new {color:#b6ff00;}
 @media screen and (max-width:420px) {
     .sort__wrap select,
     .sort__wrap .sch_txt {width:49%;}
+    .port__list li .over .tit span.date {display:none;}
+    .port__list li .over .tit {margin-top:45px;}
 }
 
 @media screen and (max-width:560px) {
@@ -223,12 +227,15 @@ span.ico.new {color:#b6ff00;}
     .movement__wrap {bottom: 15px;}
     .movement__wrap div {width:24px; height:38px;}
     .main__visual .sub_tit {display:none;}
-
-    .port__list li {width:96%; margin:2%;}
-    .port__list li .over .tit {font-size:16px;}
-    .port__list li .over .tit span {margin-top:10px; font-size:18px;}
+    .sort__wrap {padding: 8px 20px;}
+    .port__list--wrap .title {margin: 20px 20px 0; font-size:28px;}
+    /* .port__list li {width:96%; margin:2%;} */
+    .port__list li .over .tit {font-size:16px; line-height:20px;}
+    /* .port__list li .over .tit span {margin-top:10px; font-size:18px;} */
     .skill__list li {width:100%; margin:0 0 20px 0;}
-    .over {display:block;}
+    .port__list li .over .more {display:none;}
+    #header__area.wide #logo {left:20px;}
+    #header__area.wide #gnb {right:20px;}
 }
 
 @media only screen and (max-width:380px) {

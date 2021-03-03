@@ -28,10 +28,6 @@
 #header__area.on #gnb > li > a {font-size:20px; line-height:22px; font-weight:bold;}
 .main__visual.on {margin-top:65px;}
 
-#header__area.wide #logo {top:18px; left:40px;}
-#header__area.wide #logo a {width:95px !important;}
-
-#header__area.wide #gnb {top:30px; right:40px;}
 #header__area #mobile {display:none; position:absolute; top:48px; right:15px;}
 #header__area .m_menu {position:absolute;}
 header .btn_menu {display:inline-block; width:35px; height:35px; top:2px; left:0; cursor:pointer;}
@@ -68,7 +64,7 @@ header .btn_menu.on span:after {margin-top: 0; -webkit-transform: rotate(-45deg)
 #header__area .m_menu > li > ul > li:before {display:block; content:"-"; width:4px; position:absolute; top:0; left:0;}
 #header__area .m_menu > li > ul > li > a {padding-left:10px; font-size:14px; color:#fff;}
 
-#logo {position:absolute; top:20px; left:16px; font-weight:bold; font-size:36px; color:#f6ee0b;}
+#logo {position:absolute; top:19px; left:0px; font-weight:bold; font-size:36px; color:#f6ee0b;}
 #logo a {display:block; width:95px; color:#f4fc27;}
 #logo.txt a {position:relative; padding:32px 5px; font-size:18px; box-shadow:inset 0 0 0 2px #fff; font-family:"notoSansB"; box-sizing:border-box; color:#fff; text-align:center; transition: box-shadow 0.3s;}
 #logo.txt a:before,
@@ -87,7 +83,7 @@ header .btn_menu.on span:after {margin-top: 0; -webkit-transform: rotate(-45deg)
 #logo span {color:#efe70d;}
 #gnb {position:absolute; top:50px; right:0;}
 #gnb:after {display:block; clear:both; content:"";}
-#gnb > li > a {display:block; font-size:30px; color:#fff; text-align:center; line-height:34px}
+#gnb > li > a {display:block; font-size:26px; color:#fff; text-align:center; line-height:34px}
 #gnb > li > a:hover,
 #gnb > li > a:focus,
 #gnb > li.on > a {color:#efe70d;}
@@ -180,5 +176,5 @@ address {margin-top:3px;}
 address a {font-style:normal;}
 
 
-
+ #content .point__detail--wrap {display:none;}
 
