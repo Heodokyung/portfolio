@@ -720,13 +720,13 @@ $(function(){
 						// $(this).next(".paging").find(".btn_page").removeClass("on").eq( e.current-1 ).addClass("on");
 						// $('.paging button').stop().animate({'width': '24px'}, 500).find('.bg_r').stop().animate({'width': '12px'}, 500);
 						// $('.paging button.on').stop().animate({'width': '47px'}, 500).find('.bg_r').stop().animate({'width': '35px'}, 500);
-						$('.slide_count .page_num').text( e.current );
+						$('.slide__guide--count .page__num').text( e.current );
 						if (e.current != 1) {
 							$('.guide_mask').fadeOut();
 						}
 					},
-					btn_prev : $(".slide_guide .btn_area").find(".btn_prev"),
-					btn_next : $(".slide_guide .btn_area").find(".btn_next")
+					btn_prev : $(".slide__guide .btn_area").find(".btn_prev"),
+					btn_next : $(".slide__guide .btn_area").find(".btn_next")
 				});
 			}
 
