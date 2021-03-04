@@ -817,6 +817,7 @@ $(function(){
 					</nav>\
 					<ul class="m_menu">\
 						<li class="on"><a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index">Portfolio</a></li>\
+						<li><a href="https://whales.tistory.com/" traget="_blank">Blog</a></li>\
 						<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md" traget="_blank">MarkUpGuide</a></li>\
 					</ul>\
 				</header>\
@@ -844,6 +845,7 @@ $(function(){
 							<span class="arrow">&gt;<span class="hidden">현재 활성화 된 메뉴</span></span>\
 						</a>\
 					</li>\
+					<li><a href="https://whales.tistory.com/" traget="_blank">Blog</a></li>\
 					<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md" traget="_blank">Markup Guide</a></li>\
 				</ul>\
 			</aside>\
