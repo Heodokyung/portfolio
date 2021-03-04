@@ -816,7 +816,7 @@ $(function(){
 						<a href="#" class="btn_menu"><span></span><a>\
 					</nav>\
 					<ul class="m_menu">\
-						<li class="on"><a href="https://heodokyung.github.io/portfolio/index.html">Portfolio</a></li>\
+						<li class="on"><a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index">Portfolio</a></li>\
 						<li><a href="https://github.com/heodokyung/markup-guide/blob/master/README.md" traget="_blank">MarkUpGuide</a></li>\
 					</ul>\
 				</header>\
