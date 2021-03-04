@@ -22,6 +22,7 @@
 .slide__guide.on + #slide_wrap {margin-top:5px;}
 .slide__guide {display:none; position:relative; margin:30px 0 15px;}
 .slide__guide.on {display:block;}
+.swiper__guide--txt {margin:30px 0 10px;}
 .swiper__guide {display:inline-block; width:30px; height:32px; text-indent:100%; white-space:nowrap; overflow:hidden; background:url(https://heodokyung.github.io/portfolio/img/scroll_guide.png) no-repeat 0 0; vertical-align:middle;}
 .slide__guide .slide__guide--count {display:inline-block; margin-left:10px; font-size:14px; vertical-align:middle;  font-family:"notoSansB";}
 .slide__guide .slide__guide--count .page__num {color:#000;}
@@ -173,8 +174,8 @@
 	.width_fix {width:100%;}
 	#content {width:100%; float:none; margin:100px 0 0;}
     #content .title {margin:0;}
-	.tit_bar {position:relative; top:0; left:0; margin:0 0 20px 0;}
-	.tit_bar .tit {font-size:26px; margin-bottom:5px;}
+	.tit_bar {position:relative; top:75px; left:0;}
+	.tit_bar .tit {font-size:36px; margin-bottom:5px;}
 	.tit_bar p {font-size:18px; font-family:'Malgun Gothic';}
 		body.mobile .tit_bar p {text-shadow:none;}
 	.warning {display:none;}
@@ -182,7 +183,7 @@
     #logo a {width:95px !important;}
 
 	#container {padding:0 30px;}
-    #content_wrap {margin:0px auto 0; padding-top:15px;}
+    #content_wrap {margin:80px auto 0; padding-top:15px;}
 	#content .desc_area {padding-left:0px; border-left:0;}
 	#header__area header h2 {top:135px; left:50%; font-size:64px; margin-left:-156px; color:#000; border-bottom:2px solid #000;}
 
