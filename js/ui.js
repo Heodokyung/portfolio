@@ -682,15 +682,15 @@ $(function(){
 
 			if( 1 < total )
 			{
-				$('.slide_guide').addClass('on');
-				$('.slide_count .page_total').text(total);
+				$('.slide__guide').addClass('on');
+				$('.slide__guide--count .page__total').text(total);
 				var ctrl =
 					'<div class="btn_area">' +
-						'<button type="button" class="btn_prev">PREV</button>' +
-						'<button type="button" class="btn_next">NEXT</button>' +
+						'<button type="button" class="btn__prev">PREV</button>' +
+						'<button type="button" class="btn__next">NEXT</button>' +
 					'</div>';
 
-				$(".slide_guide.on").append( ctrl );
+				$(".slide__guide.on").append( ctrl );
 				$("#touchSlider").wrap('<div id="touchSliderWrap" />')
 				// $("#touchSliderWrap").append( '<div class="paging"></div>' );
 
@@ -720,13 +720,13 @@ $(function(){
 						// $(this).next(".paging").find(".btn_page").removeClass("on").eq( e.current-1 ).addClass("on");
 						// $('.paging button').stop().animate({'width': '24px'}, 500).find('.bg_r').stop().animate({'width': '12px'}, 500);
 						// $('.paging button.on').stop().animate({'width': '47px'}, 500).find('.bg_r').stop().animate({'width': '35px'}, 500);
-						$('.slide_count .page_num').text( e.current );
+						$('.slide__guide--count .page__num').text( e.current );
 						if (e.current != 1) {
 							$('.guide_mask').fadeOut();
 						}
 					},
-					btn_prev : $(".slide_guide .btn_area").find(".btn_prev"),
-					btn_next : $(".slide_guide .btn_area").find(".btn_next")
+					btn_prev : $(".slide__guide .btn_area").find(".btn_prev"),
+					btn_next : $(".slide__guide .btn_area").find(".btn_next")
 				});
 			}
 

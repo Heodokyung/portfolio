@@ -19,16 +19,16 @@
 .port_single {position:relative; border-radius:0 0 9px 9px; margin-top:20px; border:1px solid #ddd; z-index:10; overflow:hidden;}
 .port_single {text-align:center;}
 
-.slide_guide.on + #slide_wrap {margin-top:5px;}
-.slide_guide {display:none; position:relative; margin:30px 0 15px;}
-.slide_guide.on {display:block;}
+.slide__guide.on + #slide_wrap {margin-top:5px;}
+.slide__guide {display:none; position:relative; margin:30px 0 15px;}
+.slide__guide.on {display:block;}
 .swiper__guide {display:inline-block; width:30px; height:32px; text-indent:100%; white-space:nowrap; overflow:hidden; background:url(https://heodokyung.github.io/portfolio/img/scroll_guide.png) no-repeat 0 0; vertical-align:middle;}
-.slide_guide .slide_count {display:inline-block; margin-left:10px; font-size:14px; vertical-align:middle;  font-family:"notoSansB";}
-.slide_guide .slide_count .page_num {color:#000;}
-.slide_guide .slide_count .page_total {color:#888;}
-.slide_guide .btn_area {position:absolute; top:3px; right:0;}
-.slide_guide .btn_area button {font-family:'Arial'; padding:6px 10px; font-family:"notoSansB"; background:#444; color:#fff; border-radius:4px 0 4px 4px;}
-.slide_guide .btn_area button + button {margin-left:10px;}
+.slide__guide .slide__guide--count {display:inline-block; margin-left:10px; font-size:14px; vertical-align:middle;  font-family:"notoSansB";}
+.slide__guide .slide__guide--count .page__num {color:#000;}
+.slide__guide .slide__guide--count .page__total {color:#888;}
+.slide__guide .btn_area {position:absolute; top:3px; right:0;}
+.slide__guide .btn_area button {font-family:'Arial'; padding:6px 10px; font-family:"notoSansB"; background:#444; color:#fff; border-radius:4px 0 4px 4px;}
+.slide__guide .btn_area button + button {margin-left:10px;}
 #slide_wrap.on {margin-top:5px;}
 #touchSliderWrap {position:relative; border-top:4px solid #000; border-radius:0 0 5px 5px; overflow:hidden;}
 #touchSlider {position:relative; width:100%; height:150px; margin-top:15px; overflow:hidden;}
@@ -200,7 +200,7 @@
 	.scrollup span {display:none;}
 
 	#slide_wrap .btn_control {display:none;}
-	.slide_guide {display:block;}
+	.slide__guide {display:block;}
 
     .btn_app_wrap {overflow:hidden;}
     .btn_google, .btn_apple {width:49%}
