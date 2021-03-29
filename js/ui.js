@@ -813,7 +813,7 @@ $(function(){
 					<h1 id="logo" class="main txt"><a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index">HEO.D.K</a></h1>\
 					<h2>Portfolio</h2>\
 					<nav id="mobile">\
-						<a href="#" class="btn_menu"><span></span><a>\
+						<a href="#" class="btn_menu"><span></span></a>\
 					</nav>\
 					<ul class="m_menu">\
 						<li class="on"><a href="https://heodokyung.github.io/portfolio/index.html" class="btn--index">Portfolio</a></li>\
