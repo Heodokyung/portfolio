@@ -91,11 +91,11 @@
 
 			<article class="port__list--wrap">
 				<h2 class="title">Works</h2>
-				<div class="port__list">
-					<ul v-if="!query">
-						<portfolio-items v-for="(items, index) in portfolio" :key="index" :items="items" :class="items.gubun"></portfolio-items>
-					</ul>
-				</div>
+
+				<ul v-if="!query" class="port__list">
+					<portfolio-items v-for="(items, index) in portfolio" :key="index" :items="items" :class="items.gubun"></portfolio-items>
+				</ul>
+
 			</article>
 			<!-- //port__list--wrap -->
 
@@ -289,7 +289,6 @@ $(function(){
 	let windowH 	= $(window).height(),
 		documentH 	= $(document).height(),
 		easing	 	= 'swing';
-
 
 	// 스크롤 시 메뉴 페이드
 	$(window).scroll(function(event){
