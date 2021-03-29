@@ -38,6 +38,50 @@ Vue.component('portfolio-items', {
 	'
 });
 
+/**
+ * [스킬 List 컴포넌트]
+ * @type {Array}
+ */
+
+Vue.component('skill-list', {
+	props : ['items'],
+	template :'\
+		<li>\
+			<div class="front">\
+				<p>{{ items.names }}</p>\
+				<div class="over"><span class="tit">CLICK</span></div>\
+			</div>\
+			<div class="back">{{ items.details }}</div> \
+		</li>\
+	'
+});
+
+/**
+ * [Works List 컴포넌트]
+ * @type {Array}
+ */
+Vue.component('work-list', {
+	props : ['items'],
+	template :'\
+		<dl>\
+			<dt>{{ items.names }}</dt>\
+			<dd>\
+				<ul>\
+					<li>{{ items.workdate }}</li>\
+					<li>{{ items.team }}</li>\
+					<li>{{ items.details }}</li>\
+				</ul>\
+			</dd>\
+		</dl>\
+	'
+});
+
+ /**
+ * [about List 컴포넌트]
+ * @type {Array}
+ */
+
+
 const app = new Vue({
 	el: '#wrap',
 	data: {
@@ -69,7 +113,7 @@ const app = new Vue({
 				type : "WEB",
 				leng : "KOR",
 				new : false,
-				date : "2017.11.10 ~ "+ "2018.07.31",
+				date : "2017.11.10 ~ 2018.07.31",
 				link : "detail/web/w_kebhana_open.html",
 				imgSrc : "img/portfolio/kebhana_w_open.jpg",
 				title : "KEB 하나은행<br />기업뱅킹 고도화 구현",
@@ -80,7 +124,7 @@ const app = new Vue({
 				type : "MOBILE",
 				leng : "KOR",
 				new : false,
-				date : "2018.01.08 ~ "+ "2018.06.29",
+				date : "2018.01.08 ~ 2018.06.29",
 				link : "detail/mobile/m_hana_app.html",
 				imgSrc : "img/portfolio/kebhana_m_app.jpg",
 				title : "KEB 하나은행<br /> 1Q bank 기업",
@@ -91,7 +135,7 @@ const app = new Vue({
 				type : "WEB",
 				leng : "KOR",
 				new : false,
-				date : "2017.08.07 ~ "+ "2017.11.09",
+				date : "2017.08.07 ~ 2017.11.09",
 				link : "detail/web/w_kebhana_company2.html",
 				imgSrc : "img/portfolio/kebhana_w_com2.jpg",
 				title : "KEB 하나은행<br />기업뱅킹 서비스 운영",
@@ -373,6 +417,80 @@ const app = new Vue({
 				sch : "2012 Ramada hotel Casino 웹 운영 web 라마다 카지노 호텔 홈페이지"
 			}
 		],
+		skill :[
+			{
+				names : "HTML5/CSS3",
+				class : 'html',
+				details : "웹표준, 웹 접근성을 준수하고 HTML5, CSS3를 활용하여 시멘틱한 마크업을 사용합니다.",
+				url : "https://www.w3schools.com/"
+			},
+			{
+				names : "JavaScript",
+				class : 'script',
+				details : "JavaScript의 ES5, ES6 문법을 활용하여 웹/앱 환경에 최적화 된 모션과 기능을 구현하도록 노력합니다.",
+				url : "https://www.w3schools.com/js/"
+			},
+			{
+				names : "jQuery",
+				class : 'jquery',
+				details : "jQuery를 활용하여 JSON을 활용한 Ajax 데이터 핸들링 및 UI모션 기능을 구현합니다.",
+				url : "https://jquery.com/"
+			},
+			{
+				names : "Vue",
+				class : 'vue',
+				details : "Vue를 공부중이며 현재 저의 포트폴리오 사이트도 Vue로 구현하였습니다.",
+				url : "https://kr.vuejs.org/v2/guide/index.html"
+			},
+			{
+				names : "Sass",
+				class : "sass",
+				details : "Sass를 활용하여 CSS를 컴파일 합니다. 간결하고 재사용, 확장성이 가능한 CSS 코드를 사용하려 합니다.",
+				url : "https://sass-lang.com/"
+			},
+			{
+				names : "Zeplin",
+				class : "zeplin",
+				details : "디자이너와 협업을 위해 제플린을 통해 디자인을 전달받고 작업하였고 코멘트로 수정사항과 피드백을 전달하였습니다.",
+				url : ""
+			},
+			{
+				names : "Jira",
+				class : "jira",
+				details : "Jira를 통하여 신규서비스 및 수정사항, 히스토리를 관리하며 소스코드를 배포,수정합니다.",
+				url : "https://ko.atlassian.com/software/jira"
+			},
+			{
+				names : "Wiki\nConfluence",
+				class : "wiki",
+				details : "Wiki Confluence를 통해 이슈사항을 히스토리를 남겨서 모두가 확인하고 반복된 실수를 하지 않도록 공유하였습니다.",
+				url : "https://ko.atlassian.com/software/confluence"
+			},
+			{
+				names : "RedMine",
+				class : "redmine",
+				details : "https://www.redmine.org/",
+				url : "RedMine을 통하여 프로젝트의 전체 업무 일정을 확인하고 배분하여 작업을 진행하였습니다."
+			},
+			{
+				names : "Git/SVN",
+				class : "git",
+				details : "여러명의 작업자들이 함께 작업을 진행해야 하기 때문에 히스토리 관리 및 버전관리를 진행하였습니다.",
+				url : "https://github.com/"
+			},
+			{
+				names : "Sublime\nText",
+				class : "sublime",
+				details : "Sublime Text의 기능을 활용하여 보다 정확한 코드를 작성하고 업무의 효율을 증진시킵니다.",
+				url : "https://www.sublimetext.com/"
+			},
+			{
+				names : "Slack",
+				class : "slack",
+				details : "Slack을 통해 이슈사항을 공유하고 프로젝트별로 채널을 만들어 업무의 상황과 이슈를 공유하여 효율을 높입니다.",
+				url : "https://slack.com/"
+			},
+		],
 		query : '',
 		sort : 'all',
 		total : ''
@@ -416,89 +534,3 @@ const app = new Vue({
 });
 
 
-
-/**
- * [스킬 List 컴포넌트]
- * @type {Array}
- */
-/*
-Vue.component('skill-list', {
-	props : ['items'],
-	template :
-	'<li>' +
-		'<div class="front">' +
-			'<p>{{ items.names }}</p>' +
-			'<div class="over"><span class="tit">CLICK</span></div>' +
-		'</div>' +
-		'<div class="back">{{ items.details }}</div>' +
-	'</li>'
-});
-
-new Vue({
-	el: '#wrap',
-	data: {
-		skill :[
-			{
-				names : "HTML5/CSS3",
-				details : "웹표준, 웹 접근성을 준수하고 웹, 모바일 웹, 하이브리드 웹 화면에 최적화 된 화면을 구현하며 HTML5, CSS3를 활용하여 보다 간결하고 시멘틱한 마크업을 사용합니다.",
-				url : "https://www.w3schools.com/"
-			},
-			{
-				names : "JavaScript",
-				details : "JavaScript를 사용하여 스크립트를 구현합니다.\n ES5, ES6 문법을 활용하여 웹/앱 환경에 최적화 된 모션과 기능을 구현하도록 노력합니다.",
-				url : "https://www.w3schools.com/js/"
-			},
-			{
-				names : "jQuery",
-				details : "jQuery를 활용하여 Json을 활용한 Ajax 데이터 핸들링 및 UI모션 기능을 구현합니다.",
-				url : "https://jquery.com/"
-			},
-			{
-				names : "Vue",
-				details : "Vue는 사용자 인터페이스를 만들기 위한 프레임워크 입니다. 현재 저의 포트폴리오 사이트도 Vue를 사용하여 구현하였습니다.",
-				url : "https://kr.vuejs.org/v2/guide/index.html"
-			},
-			{
-				names : "Sass",
-				details : "Sass를 활용하여 CSS를 컴파일 합니다. 보다 간결하고 재사용, 확장성이 가능한 CSS 코드를 사용하여 신규 코드의 사용 및 유지보수에 용이하도록 작업합니다.",
-				url : "https://sass-lang.com/"
-			},
-			{
-				names : "Zeplin",
-				details : "디자이너와 업무의 효율적인 협업을 위해 제플린을 통해 디자인을 전달받고 작업하였습니다. 코멘트를 활용하여 수정사항을 전달하고 피드백을 전달하였습니다.",
-				url : ""
-			},
-			{
-				names : "Jira",
-				details : "Jira를 활용하여 타팀의 신규서비스 및 수정사항을 등록하고 히스토리를 관리하며 Jira와 ChangeFlow를 통해 QA에게 업무를 전달하여 소스코드를 배포 및 수정을 진행합니다.",
-				url : "https://ko.atlassian.com/software/jira"
-			},
-			{
-				names : "Wiki\nConfluence",
-				details : "Wiki Confluence를 통하여 웹/앱 작업에 대한 이슈사항을 히스토리를 남겨서 모두가 확인하고 반복된 실수를 하지 않도록 공유하고 개발자들과 Wiki Confluence를 통해 협업을 진행하였습니다.",
-				url : "https://ko.atlassian.com/software/confluence"
-			},
-			{
-				names : "RedMine",
-				details : "https://www.redmine.org/",
-				url : "RedMine을 통하여 프로젝트의 전체 IA를 확인하고 업무 일정 및 업무량을 배정받아 일정에 맞게 작업을 진행하였습니다."
-			},
-			{
-				names : "Git/SVN",
-				details : "Git/SVN을 통하여 파일 버전관리를 하였습니다. 여러명의 작업자들이 함께 작업을 진행해야 하기 때문에 히스토리 관리 및 버전관리를 통해 작업을 효율적으로 진행하였습니다.",
-				url : "https://github.com/"
-			},
-			{
-				names : "Sublime\nText",
-				details : "Sublime Text를 활용하여 마크업 및 JavaScript를 구현합니다. Sublime Text의 기능을 활용하여 보다 정확한 코드를 작성하고 업무의 효율을 증진시킵니다.",
-				url : "https://www.sublimetext.com/"
-			},
-			{
-				names : "Slack",
-				details : "Slack을 활용하여 기획, 디자인, 개발팀과의 업무를 전달하고 이슈사항을 공유합니다. 타 팀과 프로젝트별로 채널을 만들어 프로젝트별로 업무의 상황을 서로 공유하여 업무의 효율을 높입니다.",
-				url : "https://slack.com/"
-			},
-		]
-	}
-});
-*/
