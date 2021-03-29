@@ -56,26 +56,6 @@ Vue.component('skill-list', {
 	'
 });
 
-/**
- * [Works List 컴포넌트]
- * @type {Array}
- */
-Vue.component('work-list', {
-	props : ['items'],
-	template :'\
-		<dl>\
-			<dt>{{ items.names }}</dt>\
-			<dd>\
-				<ul>\
-					<li>{{ items.workdate }}</li>\
-					<li>{{ items.team }}</li>\
-					<li>{{ items.details }}</li>\
-				</ul>\
-			</dd>\
-		</dl>\
-	'
-});
-
  /**
  * [about List 컴포넌트]
  * @type {Array}
@@ -420,25 +400,25 @@ const app = new Vue({
 		skill :[
 			{
 				names : "HTML5/CSS3",
-				class : 'html',
+				class : "html",
 				details : "웹표준, 웹 접근성을 준수하고 HTML5, CSS3를 활용하여 시멘틱한 마크업을 사용합니다.",
 				url : "https://www.w3schools.com/"
 			},
 			{
 				names : "JavaScript",
-				class : 'script',
+				class : "script",
 				details : "JavaScript의 ES5, ES6 문법을 활용하여 웹/앱 환경에 최적화 된 모션과 기능을 구현하도록 노력합니다.",
 				url : "https://www.w3schools.com/js/"
 			},
 			{
 				names : "jQuery",
-				class : 'jquery',
+				class : "jquery",
 				details : "jQuery를 활용하여 JSON을 활용한 Ajax 데이터 핸들링 및 UI모션 기능을 구현합니다.",
 				url : "https://jquery.com/"
 			},
 			{
 				names : "Vue",
-				class : 'vue',
+				class : "vue",
 				details : "Vue를 공부중이며 현재 저의 포트폴리오 사이트도 Vue로 구현하였습니다.",
 				url : "https://kr.vuejs.org/v2/guide/index.html"
 			},
