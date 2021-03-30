@@ -1,4 +1,4 @@
-($(function(){
+$(function(){
 
 	// Common UI
 	let windowH     = $(window).height(),
@@ -224,7 +224,7 @@
 	'
 
 	// works
-	$('.work_skill .step--list__guide').html(workExp);
+	$('.work_experience .step--list__guide').html(workExp);
 	// info about
 	$('.info__about .step--list__guide').html(infoAbout);
 
@@ -332,4 +332,4 @@
 		} // typing
 	} // typingAnimate
 	typingAnimate();
-}))();
+});
